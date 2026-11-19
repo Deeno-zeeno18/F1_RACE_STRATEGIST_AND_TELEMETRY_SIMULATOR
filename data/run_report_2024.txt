@@ -1,0 +1,134 @@
+2024: 24 races found
+
+--- 2024 Bahrain (Sakhir) (openf1) ---
+    1024 clean laps, 57 laps
+    safety car / VSC messages seen: NONE
+
+--- 2024 Saudi Arabia (Jeddah) (openf1) ---
+    797 clean laps, 50 laps
+    safety car / VSC messages seen: ['SAFETY CAR DEPLOYED', 'SAFETY CAR IN THIS LAP']
+    SC  17:14:05 -> 17:21:42  (457 s)
+
+--- 2024 Australia (Melbourne) (openf1) ---
+    859 clean laps, 58 laps
+    safety car / VSC messages seen: ['VIRTUAL SAFETY CAR DEPLOYED', 'VIRTUAL SAFETY CAR ENDING']
+    VSC 04:26:24 -> 04:27:29  (65 s)
+    VSC 05:22:02 -> 05:23:37  (95 s)
+
+--- 2024 Japan (Suzuka) (openf1) ---
+    778 clean laps, 53 laps
+    safety car / VSC messages seen: ['ALL CARS MAY OVERTAKE THE SAFETY CAR']
+
+--- 2024 China (Shanghai) (openf1) ---
+    762 clean laps, 56 laps
+    safety car / VSC messages seen: ['FIA STEWARDS: 10 SECOND TIME PENALTY FOR CAR 2 (SAR) - SAFETY CAR INFRINGEMENT', 'FIA STEWARDS: INCIDENT INVOLVING CARS 2 (SAR) AND 27 (HUL) UNDER INVESTIGATION - SAFETY CAR INFRINGEMENT', 'FIA STEWARDS: INCIDENT INVOLVING CARS 27 (HUL) AND 3 (RIC) WILL BE INVESTIGATED AFTER THE RACE - SAFETY CAR INFRINGEMENT', 'INCIDENT INVOLVING CARS 2 (SAR) AND 27 (HUL) NOTED - SAFETY CAR INFRINGEMENT', 'INCIDENT INVOLVING CARS 27 (HUL) AND 3 (RIC) NOTED - SAFETY CAR INFRINGEMENT', 'SAFETY CAR DEPLOYED', 'SAFETY CAR IN THIS LAP', 'VIRTUAL SAFETY CAR DEPLOYED']
+    VSC 07:39:16 -> 07:43:21  (245 s)
+    SC  07:43:21 -> 07:51:06  (465 s)
+    SC  07:53:02 -> 08:02:29  (567 s)
+
+--- 2024 United States (Miami) (openf1) ---
+    920 clean laps, 57 laps
+    safety car / VSC messages seen: ['FIA STEWARDS: INCIDENT INVOLVING CAR 20 (MAG) WILL BE INVESTIGATED AFTER THE RACE - ENTERING PIT LANE UNDER SAFETY CAR CONDITIONS', 'INCIDENT INVOLVING CAR 20 (MAG) NOTED - ENTERING PIT LANE UNDER SAFETY CAR CONDITIONS', 'SAFETY CAR DEPLOYED', 'SAFETY CAR IN THIS LAP', 'VIRTUAL SAFETY CAR DEPLOYED', 'VIRTUAL SAFETY CAR ENDING']
+    VSC 20:37:57 -> 20:38:38  (41 s)
+    SC  20:47:06 -> 20:56:20  (554 s)
+
+--- 2024 Italy (Imola) (openf1) ---
+    1158 clean laps, 63 laps
+    safety car / VSC messages seen: NONE
+
+--- 2024 Monaco (Monaco) (openf1) ---
+    1141 clean laps, 78 laps
+    safety car / VSC messages seen: ['ALL CARS MAY OVERTAKE THE SAFETY CAR']
+
+--- 2024 Canada (Montréal) (openf1) ---
+    2024 Canada (Montréal): wet race (65% of laps on wet tyres)
+
+--- 2024 Spain (Barcelona) (openf1) ---
+    1205 clean laps, 66 laps
+    safety car / VSC messages seen: NONE
+
+--- 2024 Austria (Spielberg) (openf1) ---
+    1270 clean laps, 71 laps
+    safety car / VSC messages seen: ['VIRTUAL SAFETY CAR DEPLOYED', 'VIRTUAL SAFETY CAR ENDING']
+    VSC 14:20:23 -> 14:21:09  (46 s)
+
+--- 2024 United Kingdom (Silverstone) (openf1) ---
+    2024 United Kingdom (Silverstone): wet race (24% of laps on wet tyres)
+
+--- 2024 Hungary (Budapest) (openf1) ---
+    1248 clean laps, 70 laps
+    safety car / VSC messages seen: NONE
+
+--- 2024 Belgium (Spa-Francorchamps) (openf1) ---
+    751 clean laps, 44 laps
+    safety car / VSC messages seen: NONE
+
+--- 2024 Netherlands (Zandvoort) (openf1) ---
+    1349 clean laps, 72 laps
+    safety car / VSC messages seen: NONE
+
+--- 2024 Italy (Monza) (openf1) ---
+    926 clean laps, 53 laps
+    safety car / VSC messages seen: NONE
+
+--- 2024 Azerbaijan (Baku) (openf1) ---
+    877 clean laps, 51 laps
+    safety car / VSC messages seen: ['FIA STEWARDS: INCIDENT INVOLVING CAR 1 (VER) WILL BE INVESTIGATED AFTER THE RACE - VIRTUAL SAFETY CAR INFRINGEMENT', 'FIA STEWARDS: INCIDENT INVOLVING CAR 10 (GAS) WILL BE INVESTIGATED AFTER THE RACE - VIRTUAL SAFETY CAR INFRINGEMENT', 'FIA STEWARDS: INCIDENT INVOLVING CAR 27 (HUL) WILL BE INVESTIGATED AFTER THE RACE - VIRTUAL SAFETY CAR INFRINGEMENT', 'FIA STEWARDS: INCIDENT INVOLVING CAR 31 (OCO) WILL BE INVESTIGATED AFTER THE RACE - VIRTUAL SAFETY CAR INFRINGEMENT', 'INCIDENT INVOLVING CAR 1 (VER) NOTED - VIRTUAL SAFETY CAR INFRINGEMENT', 'INCIDENT INVOLVING CAR 10 (GAS) NOTED - VIRTUAL SAFETY CAR INFRINGEMENT', 'INCIDENT INVOLVING CAR 27 (HUL) NOTED - VIRTUAL SAFETY CAR INFRINGEMENT', 'INCIDENT INVOLVING CAR 31 (OCO) NOTED - VIRTUAL SAFETY CAR INFRINGEMENT', 'VIRTUAL SAFETY CAR DEPLOYED']
+    VSC 12:34:38 -> 12:37:07  (149 s)
+
+--- 2024 Singapore (Marina Bay) (openf1) ---
+    1107 clean laps, 62 laps
+    safety car / VSC messages seen: NONE
+
+--- 2024 United States (Austin) (openf1) ---
+    921 clean laps, 56 laps
+    safety car / VSC messages seen: ['SAFETY CAR DEPLOYED', 'SAFETY CAR IN THIS LAP']
+    SC  19:08:06 -> 19:14:37  (391 s)
+
+--- 2024 Mexico (Mexico City) (openf1) ---
+    1057 clean laps, 71 laps
+    safety car / VSC messages seen: ['SAFETY CAR DEPLOYED', 'SAFETY CAR IN THIS LAP']
+    SC  20:04:31 -> 20:16:17  (706 s)
+
+--- 2024 Brazil (São Paulo) (openf1) ---
+    2024 Brazil (São Paulo): wet race (100% of laps on wet tyres)
+
+--- 2024 United States (Las Vegas) (openf1) ---
+    833 clean laps, 50 laps
+    safety car / VSC messages seen: NONE
+
+--- 2024 Qatar (Lusail) (openf1) ---
+    704 clean laps, 57 laps
+    safety car / VSC messages seen: ['FIA STEWARDS: 5 SECOND TIME PENALTY FOR CAR 63 (RUS) - SAFETY CAR INFRINGEMENT', 'FIA STEWARDS: INCIDENT INVOLVING CAR 63 (RUS) UNDER INVESTIGATION - SAFETY CAR INFRINGEMENT', 'INCIDENT INVOLVING CAR 63 (RUS) NOTED - SAFETY CAR INFRINGEMENT', 'LAPPED CARS MAY NOW OVERTAKE THE SAFETY CAR: 44, 77', 'SAFETY CAR DEPLOYED', 'SAFETY CAR IN THIS LAP', 'SAFETY CAR THROUGH THE PIT LANE', 'SAFETY CAR WILL USE START/FINISH STRAIGHT', 'VIRTUAL SAFETY CAR DEPLOYED']
+    SC  16:04:33 -> 16:12:26  (473 s)
+    SC  16:56:32 -> 17:06:52  (620 s)
+    VSC 17:08:24 -> 17:08:44  (20 s)
+    SC  17:08:44 -> 17:13:40  (296 s)
+
+--- 2024 United Arab Emirates (Yas Island) (openf1) ---
+    921 clean laps, 58 laps
+    safety car / VSC messages seen: ['VIRTUAL SAFETY CAR DEPLOYED', 'VIRTUAL SAFETY CAR ENDING']
+    VSC 13:05:54 -> 13:07:40  (106 s)
+
+Races used: 21   skipped: 3
+   skipped: 2024 Canada (Montréal): wet race (65% of laps on wet tyres)
+   skipped: 2024 United Kingdom (Silverstone): wet race (24% of laps on wet tyres)
+   skipped: 2024 Brazil (São Paulo): wet race (100% of laps on wet tyres)
+Safety-car laps found: 268   VSC laps found: 0
+
+                                   placeholder    measured
+SOFT offset vs MEDIUM (s/lap)             -0.7        0.11
+HARD offset vs MEDIUM (s/lap)              0.5       0.124
+fuel penalty, full tank (s)                2.5       3.843
+pit loss, green (s)                       22.0      22.726
+pit loss, safety car (s)                  11.0      12.555
+pit loss, VSC (s)                         15.0         n/a
+safety-car lap time, x green              1.45       1.565
+VSC lap time, x green                      1.3         n/a
+gap behind safety car (s)                  1.0       1.019
+
+degradation (s per lap of tyre age): {'SOFT': 0.098, 'MEDIUM': 0.068, 'HARD': 0.057}
+stint length (median laps): {'SOFT': 12.0, 'MEDIUM': 17.0, 'HARD': 22.0}
+drivers measured: 22  (fastest VER, slowest SAR)
+
+Wrote calibration_2024.json. Send that file back.

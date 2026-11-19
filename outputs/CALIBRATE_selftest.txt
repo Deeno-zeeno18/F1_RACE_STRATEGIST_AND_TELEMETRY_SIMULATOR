@@ -1,0 +1,48 @@
+SELF-TEST: a fake race with KNOWN answers. The extractor must find them again.
+
+measure                                planted     found   verdict
+SOFT offset                             -0.700    -0.712   OK (tolerance 0.12)
+HARD offset                              0.500     0.497   OK (tolerance 0.12)
+fuel full tank (-slope x 57 laps)        2.280     2.284   OK (tolerance 0.35)
+degradation SOFT                         0.120     0.120   OK (tolerance 0.03)
+degradation MEDIUM                       0.070     0.069   OK (tolerance 0.03)
+degradation HARD                         0.040     0.040   OK (tolerance 0.03)
+pit loss green                          22.000    22.062   OK (tolerance 1.0)
+pit loss safety car                     11.000    10.930   OK (tolerance 1.5)
+pit loss VSC                            15.000    14.608   OK (tolerance 1.5)
+safety-car lap time ratio                1.450     1.455   OK (tolerance 0.04)
+VSC lap time ratio                       1.300     1.301   OK (tolerance 0.04)
+gap behind safety car                    0.900     0.900   OK (tolerance 0.15)
+
+planted drivers (pace is against the field median, so compare the sign and rough size):
+   D00: planted pace -0.30, care 0.80   found pace -0.28, care 0.80
+   D01: planted pace +0.40, care 1.25   found pace +0.42, care 1.25
+
+stint length (median laps): {'SOFT': 27.0, 'MEDIUM': 27.0, 'HARD': 29.5}
+
+SELF-TEST PASSED
+
+======================================================================
+
+OPENF1 LOADER SELF-TEST: fake OpenF1 answers -> lap table -> analysis, against the analysis of the original table
+
+safety car messages the loader saw: ['SAFETY CAR DEPLOYED', 'SAFETY CAR IN THIS LAP', 'VIRTUAL SAFETY CAR DEPLOYED', 'VIRTUAL SAFETY CAR ENDING']
+periods: [('15:30:24', '15:39:11', '4'), ('16:04:00', '16:08:35', '6')]
+
+measure                       via OpenF1    original   verdict
+SOFT offset                       -0.699      -0.699   OK (tolerance 0.05)
+HARD offset                        0.510       0.510   OK (tolerance 0.05)
+fuel per lap                      -0.040      -0.040   OK (tolerance 0.01)
+degradation MEDIUM                 0.071       0.071   OK (tolerance 0.02)
+SC lap ratio                       1.459       1.459   OK (tolerance 0.03)
+VSC lap ratio                      1.306       1.306   OK (tolerance 0.03)
+clean laps                       918.000     918.000   OK (tolerance 25)
+pit loss GREEN (count)            11.000      11.000   OK (tolerance 2)
+pit loss GREEN (median)           22.070      22.070   OK (tolerance 1.5)
+pit loss SC (count)                9.000       9.000   OK (tolerance 2)
+pit loss SC (median)              10.207      10.207   OK (tolerance 1.5)
+pit loss VSC (count)               4.000       6.000   OK (tolerance 2)
+pit loss VSC (median)             14.217      14.082   OK (tolerance 1.5)
+gap behind safety car              0.894       0.894   OK (tolerance 0.2)
+
+OPENF1 LOADER SELF-TEST PASSED

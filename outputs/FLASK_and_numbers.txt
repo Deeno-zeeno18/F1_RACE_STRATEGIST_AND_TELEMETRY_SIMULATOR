@@ -1,0 +1,81 @@
+### best 65 200
+{"driver": "balanced", "race_laps": 65, "stops": 2, "strategy": [["HARD", 23], ["HARD", 22], ["MEDIUM", 20]], "total": 6191.54}
+### best smooth 200
+{"driver": "smooth", "race_laps": 65, "stops": 2, "strategy": [["HARD", 23], ["HARD", 22], ["MEDIUM", 20]], "total": 6192.13}
+### best 8 400
+{"error": "Race too short: the optimizer needs at least 10 laps."}
+### best VER 200
+{"driver": "VER", "race_laps": 57, "stops": 2, "strategy": [["HARD", 20], ["HARD", 20], ["MEDIUM", 17]], "total": 5365.92}
+### bad driver 400
+{"error": "Unknown driver 'XXX'. Use one of: balanced, smooth, aggressive, VER, NOR, LEC, PIA, SAI, PER, HAM, RUS, ALO, HUL, COL, STR, GAS, MAG, ALB, TSU, RIC, LAW, OCO, BOT, ZHO, SAR."}
+### evaluate 200
+{"best_strategy": [["HARD", 23], ["HARD", 22], ["MEDIUM", 20]], "best_total": 6191.54, "driver": "balanced", "time_lost": 25.04, "valid": true, "your_strategy": [["MEDIUM", 31], ["HARD", 34]], "your_total": 6216.58}
+### evaluate bad 400
+{"error": "Could not read the strategy. Use e.g. strategy=MEDIUM:31,HARD:34"}
+### evaluate unknown compound 400
+{"error": "Unknown compound 'WET'. Use SOFT, MEDIUM or HARD."}
+### laps 200 65
+{'base': 92.0, 'compound': 'MEDIUM', 'compound_pace': 0.0, 'driver_pace': 0.0, 'fuel': 3.5, 'lap': 1, 'lap_time': 95.52, 'pit_lap': False, 'pit_stop': 0.0, 'tyre_age': 0, 'wear': 0.02}
+{'base': 92.0, 'compound': 'HARD', 'compound_pace': 0.0, 'driver_pace': 0.0, 'fuel': 1.831, 'lap': 32, 'lap_time': 116.555, 'pit_lap': True, 'pit_stop': 22.7, 'tyre_age': 0, 'wear': 0.024}
+### advise 200
+{"advice": "pit lap 24 on HARD, then lap 45 on HARD", "decision": "PIT", "diff": 10.59, "margin": 2.641, "why": "pitting during the 4 slow laps beats waiting by more than the margin"}
+{"error_per_lap": 0.39375936970718506, "laps_used": 3, "multiplier": 0.7, "note": null, "prior": 1.15, "rms_after": 0.394, "rms_before": 1.139, "source": "lap times", "warning": "The lap times are further from the model than any tyre-wear setting can explain (traffic, a mistake, or a different pace?). Treat the answer with care."}
+[] 45
+### duel 200
+{"advice": "pit lap 24 on HARD, then lap 45 on HARD", "decision": "PIT", "diff": 11.09, "margin": 2.012, "why": "Pitting has the better worst case. Pitting during the 4 slow laps keeps you ahead whatever he does; waiting can lose the place."}
+### not json 400 {'error': 'Send the race state as a JSON body.'}
+### tyre older than race 400 {'error': 'The tyre cannot have run more laps than the race has had.'}
+### home 200 31892
+### reaction coefficients
+SOFT 20 0.30634
+MEDIUM 30 0.1838
+HARD 36 0.14823
+### wear tables (MEDIUM): age, severity, 5*sev, linear, cliff, total
+SOFT
+  age  0 sev 0.0022 sev*5 0.011 linear 0.000 cliff 0.000 total 0.011
+  age  5 sev 0.0100 sev*5 0.050 linear 0.490 cliff 0.000 total 0.540
+  age 10 sev 0.0446 sev*5 0.223 linear 0.980 cliff 0.000 total 1.203
+  age 15 sev 0.1777 sev*5 0.889 linear 1.470 cliff 0.000 total 2.359
+  age 20 sev 0.5000 sev*5 2.500 linear 1.960 cliff 0.000 total 4.460
+  age 25 sev 0.8223 sev*5 4.111 linear 2.450 cliff 0.875 total 7.436
+  age 30 sev 0.9554 sev*5 4.777 linear 2.940 cliff 3.500 total 11.217
+  age 35 sev 0.9900 sev*5 4.950 linear 3.430 cliff 7.875 total 16.255
+  age 40 sev 0.9978 sev*5 4.989 linear 3.920 cliff 14.000 total 22.909
+  age 45 sev 0.9995 sev*5 4.998 linear 4.410 cliff 21.875 total 31.283
+  age 50 sev 0.9999 sev*5 4.999 linear 4.900 cliff 31.500 total 41.399
+MEDIUM
+  age  0 sev 0.0040 sev*5 0.020 linear 0.000 cliff 0.000 total 0.020
+  age  5 sev 0.0100 sev*5 0.050 linear 0.310 cliff 0.000 total 0.360
+  age 10 sev 0.0247 sev*5 0.123 linear 0.620 cliff 0.000 total 0.743
+  age 15 sev 0.0597 sev*5 0.298 linear 0.930 cliff 0.000 total 1.228
+  age 20 sev 0.1373 sev*5 0.686 linear 1.240 cliff 0.000 total 1.926
+  age 25 sev 0.2852 sev*5 1.426 linear 1.550 cliff 0.000 total 2.976
+  age 30 sev 0.5000 sev*5 2.500 linear 1.860 cliff 0.000 total 4.360
+  age 35 sev 0.7148 sev*5 3.574 linear 2.170 cliff 0.875 total 6.619
+  age 40 sev 0.8627 sev*5 4.314 linear 2.480 cliff 3.500 total 10.294
+  age 45 sev 0.9403 sev*5 4.702 linear 2.790 cliff 7.875 total 15.367
+  age 50 sev 0.9753 sev*5 4.877 linear 3.100 cliff 14.000 total 21.977
+HARD
+  age  0 sev 0.0048 sev*5 0.024 linear 0.000 cliff 0.000 total 0.024
+  age  5 sev 0.0100 sev*5 0.050 linear 0.285 cliff 0.000 total 0.335
+  age 10 sev 0.0208 sev*5 0.104 linear 0.570 cliff 0.000 total 0.674
+  age 15 sev 0.0426 sev*5 0.213 linear 0.855 cliff 0.000 total 1.068
+  age 20 sev 0.0854 sev*5 0.427 linear 1.140 cliff 0.000 total 1.567
+  age 25 sev 0.1638 sev*5 0.819 linear 1.425 cliff 0.000 total 2.244
+  age 30 sev 0.2912 sev*5 1.456 linear 1.710 cliff 0.000 total 3.166
+  age 35 sev 0.4630 sev*5 2.315 linear 1.995 cliff 0.000 total 4.310
+  age 40 sev 0.6440 sev*5 3.220 linear 2.280 cliff 0.560 total 6.060
+  age 45 sev 0.7915 sev*5 3.958 linear 2.565 cliff 2.835 total 9.358
+  age 50 sev 0.8885 sev*5 4.442 linear 2.850 cliff 6.860 total 14.152
+### fuel penalty by fuel load
+100 3.5
+75 2.625
+50 1.75
+25 0.875
+0 0.0
+### drivers affect wear: SOFT age 14
+balanced {'base time': 92.0, 'compound pace': -0.3, 'driver pace': 0.0, 'wear degradation': 2.058, 'fuel degradation': 3.5, 'total': 97.26}
+smooth {'base time': 92.0, 'compound pace': -0.3, 'driver pace': 0.15, 'wear degradation': 1.552, 'fuel degradation': 3.5, 'total': 96.9}
+aggressive {'base time': 92.0, 'compound pace': -0.3, 'driver pace': -0.15, 'wear degradation': 2.74, 'fuel degradation': 3.5, 'total': 97.79}
+VER {'base time': 92.0, 'compound pace': -0.3, 'driver pace': -1.125, 'wear degradation': 2.209, 'fuel degradation': 3.5, 'total': 96.28}
+SAR {'base time': 92.0, 'compound pace': -0.3, 'driver pace': 0.589, 'wear degradation': 2.724, 'fuel degradation': 3.5, 'total': 98.51}

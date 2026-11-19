@@ -1,0 +1,32 @@
+TEST 3 - replay: each driver's real stops and tyres run through the model; predicted finishing gaps vs real
+
+=== 2024 Bahrain (Sakhir): 10 drivers replayed ===
+   finishing gap to the best replayed car: model off by 24.6 s on average (predicting everyone level would be off by 45.6 s)
+   absolute race time off by 19.3 s on average (after removing the circuit's lap-time level)
+   finishing order: rank correlation 0.49; model's winner is in the real top 3: no
+
+=== 2024 Spain (Barcelona): 11 drivers replayed ===
+   finishing gap to the best replayed car: model off by 14.9 s on average (predicting everyone level would be off by 36.1 s)
+   absolute race time off by 15.0 s on average (after removing the circuit's lap-time level)
+   finishing order: rank correlation 0.72; model's winner is in the real top 3: no
+
+=== 2024 Hungary (Budapest): 11 drivers replayed ===
+   finishing gap to the best replayed car: model off by 16.0 s on average (predicting everyone level would be off by 36.5 s)
+   absolute race time off by 17.2 s on average (after removing the circuit's lap-time level)
+   finishing order: rank correlation 0.71; model's winner is in the real top 3: yes
+
+=== 2024 Japan (Suzuka): 9 drivers replayed ===
+   finishing gap to the best replayed car: model off by 19.0 s on average (predicting everyone level would be off by 30.7 s)
+   absolute race time off by 1695.8 s on average (after removing the circuit's lap-time level)
+   finishing order: rank correlation 0.43; model's winner is in the real top 3: yes
+
+--- 2024 China (Shanghai): not replayed (20% of laps were under a safety car, VSC or odd conditions)
+
+--- 2024 United States (Miami): not replayed (14% of laps were under a safety car, VSC or odd conditions)
+
+======================================================================
+ALL REPLAYED RACES
+   4 races, 41 drivers
+   mean finishing-gap error 18.6 s (level-guess baseline 37.2 s)
+   mean absolute race-time error 436.8 s
+   mean rank correlation 0.59;  winner inside the real top 3 in 2 of 4 races

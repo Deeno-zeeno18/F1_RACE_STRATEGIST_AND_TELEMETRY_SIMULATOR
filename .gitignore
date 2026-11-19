@@ -1,0 +1,5 @@
+﻿__pycache__/
+*.pyc
+.idea/
+CV_ENTRY.md
+PACKAGING_CHECKLIST.md

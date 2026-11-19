@@ -1,0 +1,53 @@
+CHECK 1: gap engine vs your simulate_duel (HARD age 40 vs SOFT age 8, 3 laps left)
+   gap 15.0  stay: mine   -2.60   yours   -2.60   OK
+   gap 15.0  SOFT: mine   -4.88   yours   -4.88   OK
+   gap 25.0  stay: mine    7.40   yours    7.40   OK
+   gap 25.0  SOFT: mine    5.12   yours    5.12   OK
+
+CHECK 2a: you lead by 15 s, SAFETY CAR for 4 laps (his lead gets wiped out)
+   you: {'pit': {'how': 'pit lap 34 on HARD, then lap 50 on HARD', 'total': 3502.37}, 'wait': {'how': 'pit lap 37 on HARD', 'total': 3513.59}}
+   him: {'pit': {'how': 'pit lap 34 on HARD, then lap 50 on HARD', 'total': 3502.37}, 'wait': {'how': 'pit lap 37 on HARD', 'total': 3513.59}}
+   final gap at the flag (positive = you are ahead):
+      you pit  / he pit :    1.05 s  (ahead)
+      you pit  / he wait:   12.27 s  (ahead, places swap on lap 34, 37, 50, 57)
+      you wait / he pit :  -10.17 s  (BEHIND, places swap on lap 37, 50, 58)
+      you wait / he wait:    1.05 s  (ahead)
+   worst cases: {'pit': 1.05, 'wait': -10.17}
+   decision: PIT | diff 11.22 | margin 1.775
+   why: Pitting has the better worst case. Pitting during the 4 slow laps keeps you ahead whatever he does; waiting can lose the place.
+
+CHECK 2b: you lead by 15 s, VIRTUAL safety car for 4 laps (gaps are kept)
+   you: {'pit': {'how': 'pit lap 34 on HARD, then lap 50 on HARD', 'total': 3410.9}, 'wait': {'how': 'pit lap 35 on HARD, then lap 50 on HARD', 'total': 3417.97}}
+   him: {'pit': {'how': 'pit lap 34 on HARD, then lap 50 on HARD', 'total': 3410.9}, 'wait': {'how': 'pit lap 35 on HARD, then lap 50 on HARD', 'total': 3417.97}}
+   final gap at the flag (positive = you are ahead):
+      you pit  / he pit :   15.00 s  (ahead)
+      you pit  / he wait:   22.08 s  (ahead, places swap on lap 34, 35)
+      you wait / he pit :    7.92 s  (ahead)
+      you wait / he wait:   15.00 s  (ahead)
+   worst cases: {'pit': 15.0, 'wait': 7.92}
+   decision: PIT | diff 7.08 | margin 1.775
+   why: Pitting has the better worst case. Both keep you ahead whatever he does.
+
+CHECK 3: he leads by 6 s (gap = -6), safety car for 4 laps
+   you: {'pit': {'how': 'pit lap 34 on HARD, then lap 50 on HARD', 'total': 3502.37}, 'wait': {'how': 'pit lap 37 on HARD', 'total': 3513.59}}
+   him: {'pit': {'how': 'pit lap 34 on HARD, then lap 50 on HARD', 'total': 3502.37}, 'wait': {'how': 'pit lap 37 on HARD', 'total': 3513.59}}
+   final gap at the flag (positive = you are ahead):
+      you pit  / he pit :   -1.05 s  (BEHIND)
+      you pit  / he wait:   10.17 s  (ahead, places swap on lap 37, 50, 58)
+      you wait / he pit :  -12.27 s  (BEHIND, places swap on lap 34, 37, 50, 57)
+      you wait / he wait:   -1.05 s  (BEHIND)
+   worst cases: {'pit': -1.05, 'wait': -12.27}
+   decision: PIT | diff 11.22 | margin 1.775
+   why: Pitting has the better worst case. Neither choice is safe: he can beat you at the flag whatever you do.
+
+CHECK 4: green flag, you lead by 2 s, same tyres
+   you: {'pit': {'how': 'pit now on HARD, then lap 48 on HARD', 'total': 3319.42}, 'wait': {'how': 'pit lap 32 on HARD, then lap 49 on HARD', 'total': 3320.47}}
+   him: {'pit': {'how': 'pit now on HARD, then lap 48 on HARD', 'total': 3319.42}, 'wait': {'how': 'pit lap 32 on HARD, then lap 49 on HARD', 'total': 3320.47}}
+   final gap at the flag (positive = you are ahead):
+      you pit  / he pit :    2.00 s  (ahead)
+      you pit  / he wait:    3.05 s  (ahead, places swap on lap 31, 32, 48, 49)
+      you wait / he pit :    0.95 s  (ahead, places swap on lap 32, 36, 49, 53)
+      you wait / he wait:    2.00 s  (ahead)
+   worst cases: {'pit': 2.0, 'wait': 0.95}
+   decision: ASK | diff 1.05 | margin 1.775
+   why: The two worst cases are within the forecast error. Both keep you ahead whatever he does.

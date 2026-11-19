@@ -1,0 +1,34 @@
+### tiny race DP
+9 None
+10 [('HARD', 5), ('SOFT', 5)]
+11 [('SOFT', 6), ('HARD', 5)]
+12 [('HARD', 6), ('SOFT', 6)]
+15 [('HARD', 8), ('SOFT', 7)]
+### cost table first values MEDIUM (balanced)
+[0.0, 0.02, 0.106, 0.259, 0.48, 0.769, 1.129, 1.561, 2.067]
+### stint costs
+SOFT 12 3.998
+MEDIUM 20 15.363
+HARD 23 18.544
+### timing
+65 laps DP seconds 0.01
+two-stop grid seconds 0.849
+### Tyre limits
+Tyre(SOFT,51) -> Exception('Invalid tyre age')
+Tyre(SOFT,-1) -> Exception('Invalid tyre age')
+### calibrate demo (CHECK 3 style)
+truth 1.0 -> fitted 1.0 rms_before 0.027 rms_after 0.032 err 0.2 lap times
+truth 1.25 -> fitted 1.25 rms_before 1.62 rms_after 0.032 err 0.2 lap times
+truth 0.85 -> fitted 0.85 rms_before 0.745 rms_after 0.032 err 0.2 lap times
+young tyre: model only 1.0 This tyre is too young for the lap times to show how it wears, so the engineer is using the model.
+### fit_line example (0.25, 0.4833333333333334)
+### faded multiplier [1.3, 1.15, 1.075, 1.0375]
+### fuel_at [100.0, 98.46, 50.77, 1.54]
+### expand_plan
+['VSC', 'VSC', 'GREEN', 'GREEN', 'GREEN', 'SC', 'SC', 'SC', 'GREEN', 'GREEN', 'GREEN', 'GREEN']
+['SC', 'SC', 'SC']
+### drive_lap under SC: lap time 143.52 + pit loss 11 = 154.52
+### gap_trace demo
+(5.0, [3.5, 4.0, 4.5, 5.0], [])
+(1.05, [1.05, 1.05, 1.05], [])
+(15.0, [15.0, 15.0, 15.0], [])

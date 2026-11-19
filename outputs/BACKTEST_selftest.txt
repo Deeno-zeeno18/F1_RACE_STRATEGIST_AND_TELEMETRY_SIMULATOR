@@ -1,0 +1,31 @@
+SELF-TEST: a race made by the model itself; it must find its own stops and read the situation sensibly
+
+plan the model chose: [(18, 'HARD'), (38, 'HARD')] (lap on which the new set goes on)
+TEST 1 results:
+   stint starting lap 18: model says stop on lap 38, real 38  OK
+   stint starting lap 38: model says stop on lap None, real None  OK
+
+TEST 2 - pit now or stay?   (15 situations)
+   what he really did              n  model said PIT    STAY     ASK
+   stopped this lap or next        2           100%      0%      0%
+   stopped 2-5 laps later          4             0%    100%      0%
+   no stop within 5 laps           9             0%    100%      0%
+   when the model made a call (not ASK) on the clear cases: right 100% of 11
+   ASK share overall: 0%
+
+   Stop window width needed (n=13): scale x the forecast-error margin
+     scale   contains the real stop   median width (laps)
+         1                     100%                     8
+         2                     100%                    11
+         3                     100%                    13
+         4                     100%                    17
+         6                     100%                    19
+         8                     100%                    20
+   live-updated next-stop lap (uses the real laps so far): mean error 0.0 laps, within 3 laps 100%, median signed +0.0   (n=13)
+   the engineer's STOP WINDOW contained the real stop lap in 100% of 13 cases (median window 8 laps wide)
+      when the stop was really within 5 laps: mean error 0.0 laps, within 3 laps 100%   (n=6)
+
+   wrong-way calls: STAY just before a stop 0, PIT with no stop near 0
+replay of model-made drivers: gap error 0.0000 s, time error 0.0000 s  OK
+
+SELF-TEST PASSED

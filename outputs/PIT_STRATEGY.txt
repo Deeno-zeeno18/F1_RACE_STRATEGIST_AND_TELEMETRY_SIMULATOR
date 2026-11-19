@@ -1,0 +1,133 @@
+age=26, remaining=11, expected=True, got=False -> CHECK
+age=28, remaining=3, expected=True, got=False -> CHECK
+age=27, remaining=1, expected=False, got=False -> ALRIGHT
+age=15, remaining=40, expected=False, got=False -> ALRIGHT
+----------------LAP RESULTS AFTER A SIMULATION OVER A NUMBER OF LAPS IF A TYRE WERE TO PIT ANY LAP----------------
+LAP 1 ---------------- 95.52seconds
+LAP 2 ---------------- 95.53seconds
+LAP 3 ---------------- 95.55seconds
+LAP 4 ---------------- 95.56seconds
+LAP 5 ---------------- 95.57seconds
+LAP 6 ---------------- 95.59seconds
+LAP 7 ---------------- 95.61seconds
+LAP 8 ---------------- 95.63seconds
+LAP 9 ---------------- 95.65seconds
+LAP 10 ---------------- 95.68seconds
+LAP 11 ---------------- 95.71seconds
+LAP 12 ---------------- 95.74seconds
+LAP 13 ---------------- 95.77seconds
+LAP 14 ---------------- 95.82seconds
+LAP 15 ---------------- 95.87seconds
+LAP 16 ---------------- 95.92seconds
+LAP 17 ---------------- 95.98seconds
+LAP 18 ---------------- 96.06seconds
+LAP 19 ---------------- 96.14seconds
+LAP 20 ---------------- 96.24seconds
+LAP 21 ---------------- 96.35seconds
+LAP 22 ---------------- 96.47seconds
+LAP 23 ---------------- 96.61seconds
+LAP 24 ---------------- 96.77seconds
+LAP 25 ---------------- 96.94seconds
+LAP 26 ---------------- 97.13seconds
+LAP 27 ---------------- 97.33seconds
+LAP 28 ---------------- 97.55seconds
+---- LAP 29 DECISION POINT ----
+     stay out : 4185.59s
+     pit on SOFT  : 3653.65s
+     pit on MEDIUM: 3548.62s
+     pit on HARD  : 3527.01s
+     chosen: HARD
+BEFORE PIT: compound=MEDIUM, age=28, caution=30
+AFTER PIT: compound=HARD, age=0, caution=36
+LAP 29 ---------------- 116.72seconds
+LAP 30 ---------------- 94.02seconds
+LAP 31 ---------------- 94.03seconds
+LAP 32 ---------------- 94.04seconds
+LAP 33 ---------------- 94.05seconds
+LAP 34 ---------------- 94.06seconds
+LAP 35 ---------------- 94.07seconds
+LAP 36 ---------------- 94.08seconds
+LAP 37 ---------------- 94.10seconds
+LAP 38 ---------------- 94.11seconds
+LAP 39 ---------------- 94.13seconds
+LAP 40 ---------------- 94.15seconds
+LAP 41 ---------------- 94.17seconds
+LAP 42 ---------------- 94.19seconds
+LAP 43 ---------------- 94.22seconds
+LAP 44 ---------------- 94.25seconds
+LAP 45 ---------------- 94.29seconds
+LAP 46 ---------------- 94.33seconds
+LAP 47 ---------------- 94.37seconds
+LAP 48 ---------------- 94.42seconds
+LAP 49 ---------------- 94.48seconds
+LAP 50 ---------------- 94.55seconds
+LAP 51 ---------------- 94.62seconds
+LAP 52 ---------------- 94.70seconds
+LAP 53 ---------------- 94.79seconds
+LAP 54 ---------------- 94.89seconds
+LAP 55 ---------------- 95.00seconds
+LAP 56 ---------------- 95.12seconds
+LAP 57 ---------------- 95.25seconds
+LAP 58 ---------------- 95.39seconds
+LAP 59 ---------------- 95.54seconds
+LAP 60 ---------------- 95.70seconds
+LAP 61 ---------------- 95.87seconds
+LAP 62 ---------------- 96.05seconds
+LAP 63 ---------------- 96.23seconds
+LAP 64 ---------------- 96.42seconds
+LAP 65 ---------------- 96.61seconds
+--------------LAP RESULTS-------------------
+{'LAP 1': 95.52, 'LAP 2': 95.53, 'LAP 3': 95.55, 'LAP 4': 95.56, 'LAP 5': 95.57, 'LAP 6': 95.59, 'LAP 7': 95.61, 'LAP 8': 95.63, 'LAP 9': 95.65, 'LAP 10': 95.68, 'LAP 11': 95.71, 'LAP 12': 95.74, 'LAP 13': 95.77, 'LAP 14': 95.82, 'LAP 15': 95.87, 'LAP 16': 95.92, 'LAP 17': 95.98, 'LAP 18': 96.06, 'LAP 19': 96.14, 'LAP 20': 96.24, 'LAP 21': 96.35, 'LAP 22': 96.47, 'LAP 23': 96.61, 'LAP 24': 96.77, 'LAP 25': 96.94, 'LAP 26': 97.13, 'LAP 27': 97.33, 'LAP 28': 97.55, 'LAP 29': 116.72, 'LAP 30': 94.02, 'LAP 31': 94.03, 'LAP 32': 94.04, 'LAP 33': 94.05, 'LAP 34': 94.06, 'LAP 35': 94.07, 'LAP 36': 94.08, 'LAP 37': 94.1, 'LAP 38': 94.11, 'LAP 39': 94.13, 'LAP 40': 94.15, 'LAP 41': 94.17, 'LAP 42': 94.19, 'LAP 43': 94.22, 'LAP 44': 94.25, 'LAP 45': 94.29, 'LAP 46': 94.33, 'LAP 47': 94.37, 'LAP 48': 94.42, 'LAP 49': 94.48, 'LAP 50': 94.55, 'LAP 51': 94.62, 'LAP 52': 94.7, 'LAP 53': 94.79, 'LAP 54': 94.89, 'LAP 55': 95.0, 'LAP 56': 95.12, 'LAP 57': 95.25, 'LAP 58': 95.39, 'LAP 59': 95.54, 'LAP 60': 95.7, 'LAP 61': 95.87, 'LAP 62': 96.05, 'LAP 63': 96.23, 'LAP 64': 96.42, 'LAP 65': 96.61}
+Simulated 26 laps: 2495.41s
+Original car untouched: age=0, lap=0
+age=0: {'base time': 92.0, 'compound pace': 0.0, 'driver pace': 0.0, 'wear degradation': 0.02, 'fuel degradation': 3.5, 'total': 95.52}
+age=26: {'base time': 92.0, 'compound pace': 0.0, 'driver pace': 0.0, 'wear degradation': 3.232, 'fuel degradation': 3.5, 'total': 98.73}
+SOFT: {'base time': 92.0, 'compound pace': -0.3, 'driver pace': 0.0, 'wear degradation': 0.011, 'fuel degradation': 3.5, 'total': 95.21}
+MEDIUM: {'base time': 92.0, 'compound pace': 0.0, 'driver pace': 0.0, 'wear degradation': 0.02, 'fuel degradation': 3.5, 'total': 95.52}
+HARD: {'base time': 92.0, 'compound pace': 0.0, 'driver pace': 0.0, 'wear degradation': 0.024, 'fuel degradation': 3.5, 'total': 95.52}
+Two stop: 6210.18s
+One stop: 6220.57s
+Best one-stop: [('MEDIUM', 30), ('HARD', 35)] -----> 6216.29s
+6216.581
+6216.581
+Best two-stop: [('MEDIUM', 20), ('HARD', 23), ('HARD', 22)] -> 6191.54s
+[('SOFT', 16), ('SOFT', 16), ('SOFT', 16), ('MEDIUM', 17)] 6205.87s
+[('SOFT', 16), ('SOFT', 16), ('MEDIUM', 16), ('MEDIUM', 17)] 6204.46s
+[('SOFT', 16), ('MEDIUM', 16), ('MEDIUM', 16), ('MEDIUM', 17)] 6203.04s
+gap by simulation: 2.7848s | gap by stint_cost: 2.7848s
+Best any-stop: [('HARD', 23), ('HARD', 22), ('MEDIUM', 20)]
+   stops: 2 | total: 6191.54s
+{'valid': True, 'driver': 'balanced', 'your_strategy': [('MEDIUM', 31), ('HARD', 34)], 'your_total': 6216.58, 'best_strategy': [('HARD', 23), ('HARD', 22), ('MEDIUM', 20)], 'best_total': 6191.54, 'time_lost': 25.04}
+{'valid': False, 'reason': 'A dry race needs at least two different compounds.'}
+  valid: True
+  driver: balanced
+  your_strategy: [('MEDIUM', 31), ('HARD', 34)]
+  your_total: 6216.58
+  best_strategy: [('HARD', 23), ('HARD', 22), ('MEDIUM', 20)]
+  best_total: 6191.54
+  time_lost: 25.04
+65 laps recorded
+{'lap': 1, 'compound': 'HARD', 'tyre_age': 0, 'pit_lap': False, 'base': 92.0, 'compound_pace': 0.0, 'driver_pace': 0.0, 'wear': 0.02395369822485779, 'fuel': 3.5, 'pit_stop': 0.0, 'lap_time': 95.52395369822486}
+{'lap': 21, 'compound': 'HARD', 'tyre_age': 20, 'pit_lap': False, 'base': 92.0, 'compound_pace': 0.0, 'driver_pace': 0.0, 'wear': 1.5667914810218637, 'fuel': 2.423076923076927, 'pit_stop': 0.0, 'lap_time': 95.98986840409879}
+Sum of lap times: 6191.54s
+{'valid': False, 'reason': 'The optimizer needs a race of at least 10 laps.'}
+{'valid': True, 'driver': 'balanced', 'your_strategy': [('MEDIUM', 50), ('HARD', 15)], 'your_total': 6385.94, 'best_strategy': [('HARD', 23), ('HARD', 22), ('MEDIUM', 20)], 'best_total': 6191.54, 'time_lost': 194.4}
+SOFT max laps on one set: 51
+MEDIUM max laps on one set: 51
+HARD max laps on one set: 51
+pit loss 14s -> 3 stops: [('HARD', 18), ('HARD', 17), ('HARD', 18), ('SOFT', 12)]
+pit loss 18s -> 2 stops: [('HARD', 23), ('HARD', 22), ('MEDIUM', 20)]
+pit loss 22s -> 2 stops: [('HARD', 23), ('HARD', 22), ('MEDIUM', 20)]
+pit loss 26s -> 2 stops: [('HARD', 23), ('HARD', 22), ('MEDIUM', 20)]
+pit loss 30s -> 2 stops: [('HARD', 23), ('HARD', 22), ('MEDIUM', 20)]
+pit loss 34s -> 2 stops: [('HARD', 23), ('HARD', 22), ('MEDIUM', 20)]
+balanced {'base time': 92.0, 'compound pace': -0.3, 'driver pace': 0.0, 'wear degradation': 2.058, 'fuel degradation': 3.5, 'total': 97.26}
+smooth {'base time': 92.0, 'compound pace': -0.3, 'driver pace': 0.15, 'wear degradation': 1.552, 'fuel degradation': 3.5, 'total': 96.9}
+aggressive {'base time': 92.0, 'compound pace': -0.3, 'driver pace': -0.15, 'wear degradation': 2.74, 'fuel degradation': 3.5, 'total': 97.79}
+balanced 2 stops: [('HARD', 23), ('HARD', 22), ('MEDIUM', 20)] 6191.54s
+smooth 2 stops: [('HARD', 23), ('HARD', 22), ('MEDIUM', 20)] 6192.13s
+aggressive 2 stops: [('HARD', 23), ('HARD', 22), ('MEDIUM', 20)] 6192.27s
+gap 15.0s: {'decision': 'stay', 'final_gap': -2.6, 'still_ahead': False, 'pass_lap': 3, 'my_time': 306.19}
+gap 15.0s: {'decision': 'SOFT', 'final_gap': -4.88, 'still_ahead': False, 'pass_lap': 1, 'my_time': 308.48}
+gap 25.0s: {'decision': 'stay', 'final_gap': 7.4, 'still_ahead': True, 'pass_lap': None, 'my_time': 306.19}
+gap 25.0s: {'decision': 'SOFT', 'final_gap': 5.12, 'still_ahead': True, 'pass_lap': None, 'my_time': 308.48}

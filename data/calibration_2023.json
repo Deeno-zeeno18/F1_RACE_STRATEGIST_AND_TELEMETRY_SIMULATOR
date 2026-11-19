@@ -1,0 +1,721 @@
+{
+  "races_used": [
+    "2023 Bahrain (Sakhir)",
+    "2023 Saudi Arabia (Jeddah)",
+    "2023 Australia (Melbourne)",
+    "2023 Azerbaijan (Baku)",
+    "2023 United States (Miami)",
+    "2023 Spain (Barcelona)",
+    "2023 Canada (Montr\u00e9al)",
+    "2023 Austria (Spielberg)",
+    "2023 United Kingdom (Silverstone)",
+    "2023 Hungary (Budapest)",
+    "2023 Belgium (Spa-Francorchamps)",
+    "2023 Italy (Monza)",
+    "2023 Singapore (Marina Bay)",
+    "2023 Japan (Suzuka)",
+    "2023 Qatar (Lusail)",
+    "2023 United States (Austin)",
+    "2023 Mexico (Mexico City)",
+    "2023 Brazil (S\u00e3o Paulo)",
+    "2023 United States (Las Vegas)",
+    "2023 United Arab Emirates (Yas Island)"
+  ],
+  "races_skipped": [
+    "2023 Italy (Imola): RuntimeError: OpenF1 has no lap data for this race [line 685: raise RuntimeError(\"OpenF1 has no lap data for this race\")]",
+    "2023 Monaco (Monaco): wet race (31% of laps on wet tyres)",
+    "2023 Netherlands (Zandvoort): wet race (24% of laps on wet tyres)"
+  ],
+  "compound_pace_offset": {
+    "MEDIUM": 0.0,
+    "SOFT": {
+      "median": -0.197,
+      "per_race": [
+        0.172,
+        -0.259,
+        0.119,
+        -0.689,
+        -0.312,
+        -0.138
+      ]
+    },
+    "HARD": {
+      "median": 0.007,
+      "per_race": [
+        -0.275,
+        0.278,
+        0.009,
+        0.026,
+        -0.163,
+        0.106,
+        0.175,
+        -0.126,
+        -0.094,
+        0.065,
+        0.904,
+        -0.278,
+        -0.95,
+        0.258,
+        0.084,
+        0.134,
+        -0.111
+      ]
+    }
+  },
+  "fuel_seconds_per_lap": {
+    "median": -0.055,
+    "per_race": [
+      -0.079,
+      -0.049,
+      -0.05,
+      -0.08,
+      -0.054,
+      -0.057,
+      -0.044,
+      -0.037,
+      -0.058,
+      -0.049,
+      -0.104,
+      -0.035,
+      -0.051,
+      -0.069,
+      -0.084,
+      -0.071,
+      -0.041,
+      -0.041,
+      -0.092,
+      -0.058
+    ]
+  },
+  "fuel_full_tank_penalty": {
+    "median": 3.256,
+    "per_race": [
+      4.531,
+      2.44,
+      2.876,
+      4.081,
+      3.059,
+      3.773,
+      3.089,
+      2.616,
+      3.007,
+      3.422,
+      4.594,
+      1.791,
+      3.149,
+      3.666,
+      4.805,
+      4.002,
+      2.939,
+      2.88,
+      4.584,
+      3.362
+    ]
+  },
+  "degradation_per_lap": {
+    "SOFT": {
+      "median": 0.098,
+      "per_race": [
+        0.161,
+        0.051,
+        0.047,
+        0.179,
+        0.098,
+        0.111,
+        0.058
+      ]
+    },
+    "MEDIUM": {
+      "median": 0.052,
+      "per_race": [
+        -0.02,
+        0.036,
+        0.03,
+        0.027,
+        0.066,
+        0.039,
+        0.064,
+        0.017,
+        0.057,
+        0.224,
+        0.07,
+        0.05,
+        0.1,
+        0.013,
+        0.075,
+        0.052,
+        0.064,
+        0.025,
+        0.072
+      ]
+    },
+    "HARD": {
+      "median": 0.057,
+      "per_race": [
+        0.133,
+        -0.014,
+        -0.013,
+        0.035,
+        0.025,
+        0.075,
+        0.029,
+        0.059,
+        0.027,
+        0.067,
+        0.06,
+        0.032,
+        0.128,
+        0.079,
+        0.079,
+        0.056,
+        0.016,
+        0.061
+      ]
+    }
+  },
+  "stint_length": {
+    "SOFT": {
+      "median": 14.0,
+      "p25": 9.0,
+      "p75": 20.0,
+      "n": 73
+    },
+    "MEDIUM": {
+      "median": 17.0,
+      "p25": 14.0,
+      "p75": 21.0,
+      "n": 213
+    },
+    "HARD": {
+      "median": 21.0,
+      "p25": 18.0,
+      "p75": 26.0,
+      "n": 125
+    }
+  },
+  "lap_time_ratio": {
+    "SC": {
+      "median": 1.558,
+      "per_race": [
+        1.375,
+        1.389,
+        1.516,
+        1.558,
+        1.694,
+        1.656,
+        1.693
+      ]
+    },
+    "VSC": null
+  },
+  "track_laps_found": {
+    "SC": 202,
+    "VSC": 0
+  },
+  "pit_loss": {
+    "GREEN": {
+      "median": 22.616,
+      "p25": 21.15,
+      "p75": 24.835,
+      "n": 413
+    },
+    "SC": {
+      "median": 7.861,
+      "p25": 4.631,
+      "p75": 11.092,
+      "n": 2
+    },
+    "VSC": null
+  },
+  "bunch_gap": {
+    "SC": {
+      "median": 1.14,
+      "p25": 0.843,
+      "p75": 1.558,
+      "n": 118
+    },
+    "GREEN": {
+      "median": 2.453,
+      "p25": 1.125,
+      "p75": 5.188,
+      "n": 10585
+    }
+  },
+  "drivers": {
+    "VER": {
+      "pace": -1.055,
+      "tyre_care": 0.864,
+      "clean_laps": 1028,
+      "races": 20
+    },
+    "PER": {
+      "pace": -0.674,
+      "tyre_care": 0.865,
+      "clean_laps": 915,
+      "races": 18
+    },
+    "LEC": {
+      "pace": -0.551,
+      "tyre_care": 1.011,
+      "clean_laps": 894,
+      "races": 18
+    },
+    "HAM": {
+      "pace": -0.475,
+      "tyre_care": 0.946,
+      "clean_laps": 985,
+      "races": 19
+    },
+    "NOR": {
+      "pace": -0.417,
+      "tyre_care": 0.923,
+      "clean_laps": 950,
+      "races": 19
+    },
+    "SAI": {
+      "pace": -0.413,
+      "tyre_care": 1.034,
+      "clean_laps": 953,
+      "races": 19
+    },
+    "RUS": {
+      "pace": -0.353,
+      "tyre_care": 0.866,
+      "clean_laps": 949,
+      "races": 19
+    },
+    "ALO": {
+      "pace": -0.243,
+      "tyre_care": 0.833,
+      "clean_laps": 999,
+      "races": 20
+    },
+    "PIA": {
+      "pace": -0.055,
+      "tyre_care": 0.974,
+      "clean_laps": 870,
+      "races": 17
+    },
+    "STR": {
+      "pace": -0.028,
+      "tyre_care": 0.863,
+      "clean_laps": 869,
+      "races": 17
+    },
+    "GAS": {
+      "pace": 0.009,
+      "tyre_care": 0.883,
+      "clean_laps": 938,
+      "races": 19
+    },
+    "OCO": {
+      "pace": 0.112,
+      "tyre_care": 0.943,
+      "clean_laps": 823,
+      "races": 17
+    },
+    "RIC": {
+      "pace": 0.157,
+      "tyre_care": 0.909,
+      "clean_laps": 362,
+      "races": 7
+    },
+    "TSU": {
+      "pace": 0.205,
+      "tyre_care": 0.998,
+      "clean_laps": 894,
+      "races": 18
+    },
+    "HUL": {
+      "pace": 0.22,
+      "tyre_care": 1.314,
+      "clean_laps": 941,
+      "races": 19
+    },
+    "ALB": {
+      "pace": 0.307,
+      "tyre_care": 0.87,
+      "clean_laps": 872,
+      "races": 18
+    },
+    "SAR": {
+      "pace": 0.337,
+      "tyre_care": 1.188,
+      "clean_laps": 891,
+      "races": 18
+    },
+    "ZHO": {
+      "pace": 0.356,
+      "tyre_care": 0.998,
+      "clean_laps": 943,
+      "races": 20
+    },
+    "MAG": {
+      "pace": 0.44,
+      "tyre_care": 1.179,
+      "clean_laps": 899,
+      "races": 19
+    },
+    "BOT": {
+      "pace": 0.451,
+      "tyre_care": 0.965,
+      "clean_laps": 914,
+      "races": 19
+    },
+    "DEV": {
+      "pace": 0.49,
+      "tyre_care": 0.956,
+      "clean_laps": 402,
+      "races": 8
+    },
+    "LAW": {
+      "pace": 0.822,
+      "tyre_care": 0.74,
+      "clean_laps": 188,
+      "races": 4
+    }
+  },
+  "suggested": {
+    "compound_pace_offset": {
+      "SOFT": -0.197,
+      "MEDIUM": 0.0,
+      "HARD": 0.007
+    },
+    "fuel_full_tank_penalty": 3.256,
+    "pit_loss": {
+      "GREEN": 22.616,
+      "SC": 7.861,
+      "VSC": null
+    },
+    "lap_mult": {
+      "SC": 1.558,
+      "VSC": null
+    },
+    "bunch_gap": 1.14
+  },
+  "openf1_notes": {
+    "2023 Bahrain (Sakhir)": {
+      "session_key": 7953,
+      "safety_car_messages": [
+        "VIRTUAL SAFETY CAR DEPLOYED",
+        "VIRTUAL SAFETY CAR ENDING"
+      ],
+      "periods_found": [
+        [
+          "2023-03-05 16:10:19+00:00",
+          "2023-03-05 16:11:55+00:00",
+          "6"
+        ]
+      ]
+    },
+    "2023 Saudi Arabia (Jeddah)": {
+      "session_key": 7779,
+      "safety_car_messages": [
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP"
+      ],
+      "periods_found": [
+        [
+          "2023-03-19 17:31:10+00:00",
+          "2023-03-19 17:37:40+00:00",
+          "4"
+        ]
+      ]
+    },
+    "2023 Australia (Melbourne)": {
+      "session_key": 7787,
+      "safety_car_messages": [
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP",
+        "SAFETY CAR WILL ENTER PITS: ROLLING START PROCEDURE",
+        "VIRTUAL SAFETY CAR DEPLOYED",
+        "VIRTUAL SAFETY CAR ENDING"
+      ],
+      "periods_found": [
+        [
+          "2023-04-02 05:04:27+00:00",
+          "2023-04-02 05:08:57+00:00",
+          "4"
+        ],
+        [
+          "2023-04-02 05:14:24+00:00",
+          "2023-04-02 05:17:02+00:00",
+          "4"
+        ],
+        [
+          "2023-04-02 05:48:36+00:00",
+          "2023-04-02 05:50:38+00:00",
+          "6"
+        ],
+        [
+          "2023-04-02 06:38:32+00:00",
+          "2023-04-02 06:41:07+00:00",
+          "4"
+        ]
+      ]
+    },
+    "2023 Azerbaijan (Baku)": {
+      "session_key": 9070,
+      "safety_car_messages": [
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP"
+      ],
+      "periods_found": [
+        [
+          "2023-04-30 11:22:24+00:00",
+          "2023-04-30 11:30:12+00:00",
+          "4"
+        ]
+      ]
+    },
+    "2023 United States (Miami)": {
+      "session_key": 9078,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2023 Monaco (Monaco)": {
+      "session_key": 9094,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2023 Spain (Barcelona)": {
+      "session_key": 9102,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2023 Canada (Montr\u00e9al)": {
+      "session_key": 9110,
+      "safety_car_messages": [
+        "PIT EXIT INCIDENT INVOLVING CARS 31 (OCO), 77 (BOT) AND 20 (MAG) NOTED - OVERTAKING UNDER SAFETY CAR",
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP",
+        "VIRTUAL SAFETY CAR DEPLOYED",
+        "VIRTUAL SAFETY CAR ENDING"
+      ],
+      "periods_found": [
+        [
+          "2023-06-18 18:12:28+00:00",
+          "2023-06-18 18:13:02+00:00",
+          "6"
+        ],
+        [
+          "2023-06-18 18:18:44+00:00",
+          "2023-06-18 18:27:41+00:00",
+          "4"
+        ]
+      ]
+    },
+    "2023 Austria (Spielberg)": {
+      "session_key": 9118,
+      "safety_car_messages": [
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP",
+        "SAFETY CAR THROUGH THE PIT LANE",
+        "VIRTUAL SAFETY CAR DEPLOYED",
+        "VIRTUAL SAFETY CAR ENDING"
+      ],
+      "periods_found": [
+        [
+          "2023-07-02 13:03:56+00:00",
+          "2023-07-02 13:08:14+00:00",
+          "4"
+        ],
+        [
+          "2023-07-02 13:20:53+00:00",
+          "2023-07-02 13:23:00+00:00",
+          "6"
+        ]
+      ]
+    },
+    "2023 United Kingdom (Silverstone)": {
+      "session_key": 9126,
+      "safety_car_messages": [
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP",
+        "VIRTUAL SAFETY CAR DEPLOYED"
+      ],
+      "periods_found": [
+        [
+          "2023-07-09 14:52:54+00:00",
+          "2023-07-09 14:54:18+00:00",
+          "6"
+        ],
+        [
+          "2023-07-09 14:54:18+00:00",
+          "2023-07-09 15:06:52+00:00",
+          "4"
+        ]
+      ]
+    },
+    "2023 Hungary (Budapest)": {
+      "session_key": 9133,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2023 Belgium (Spa-Francorchamps)": {
+      "session_key": 9141,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2023 Netherlands (Zandvoort)": {
+      "session_key": 9149,
+      "safety_car_messages": [
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP",
+        "SAFETY CAR WILL ENTER PITS: ROLLING START PROCEDURE",
+        "THE SAFETY CAR WILL STAY OUT FOR 2 LAPS ",
+        "VIRTUAL SAFETY CAR DEPLOYED"
+      ],
+      "periods_found": [
+        [
+          "2023-08-27 13:26:04+00:00",
+          "2023-08-27 13:36:27+00:00",
+          "4"
+        ],
+        [
+          "2023-08-27 14:30:29+00:00",
+          "2023-08-27 14:31:16+00:00",
+          "6"
+        ]
+      ]
+    },
+    "2023 Italy (Monza)": {
+      "session_key": 9157,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2023 Singapore (Marina Bay)": {
+      "session_key": 9165,
+      "safety_car_messages": [
+        "FIA STEWARDS: PIT EXIT INCIDENT INVOLVING CARS 11 (PER) AND 23 (ALB) WILL BE INVESTIGATED AFTER THE RACE - VSC INFRINGEMENT",
+        "PIT EXIT INCIDENT INVOLVING CARS 11 (PER) AND 23 (ALB) NOTED - VSC INFRINGEMENT",
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP",
+        "VIRTUAL SAFETY CAR DEPLOYED",
+        "VIRTUAL SAFETY CAR ENDING"
+      ],
+      "periods_found": [
+        [
+          "2023-09-17 12:36:41+00:00",
+          "2023-09-17 12:42:31+00:00",
+          "4"
+        ],
+        [
+          "2023-09-17 13:18:06+00:00",
+          "2023-09-17 13:21:29+00:00",
+          "6"
+        ]
+      ]
+    },
+    "2023 Japan (Suzuka)": {
+      "session_key": 9173,
+      "safety_car_messages": [
+        "FIA STEWARDS: 5 SECOND TIME PENALTY FOR CAR 11 (PER) - SAFETY CAR INFRINGEMENT",
+        "FIA STEWARDS: INCIDENT INVOLVING CAR 11 (PER) UNDER INVESTIGATION - SAFETY CAR INFRINGEMENT",
+        "INCIDENT INVOLVING CAR 11 (PER) NOTED - SAFETY CAR INFRINGEMENT",
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP",
+        "VIRTUAL SAFETY CAR DEPLOYED",
+        "VIRTUAL SAFETY CAR ENDING"
+      ],
+      "periods_found": [
+        [
+          "2023-09-24 05:05:18+00:00",
+          "2023-09-24 05:14:11+00:00",
+          "4"
+        ],
+        [
+          "2023-09-24 05:29:34+00:00",
+          "2023-09-24 05:30:36+00:00",
+          "6"
+        ]
+      ]
+    },
+    "2023 Qatar (Lusail)": {
+      "session_key": 9221,
+      "safety_car_messages": [
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP"
+      ],
+      "periods_found": [
+        [
+          "2023-10-08 17:04:43+00:00",
+          "2023-10-08 17:12:30+00:00",
+          "4"
+        ]
+      ]
+    },
+    "2023 United States (Austin)": {
+      "session_key": 9213,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2023 Mexico (Mexico City)": {
+      "session_key": 9181,
+      "safety_car_messages": [
+        "ALL CARS MAY OVERTAKE THE SAFETY CAR",
+        "SAFETY CAR DEPLOYED",
+        "VIRTUAL SAFETY CAR DEPLOYED",
+        "VIRTUAL SAFETY CAR ENDING"
+      ],
+      "periods_found": [
+        [
+          "2023-10-29 20:09:05+00:00",
+          "2023-10-29 20:10:21+00:00",
+          "6"
+        ],
+        [
+          "2023-10-29 20:49:24+00:00",
+          "2023-10-29 20:51:53+00:00",
+          "4"
+        ]
+      ]
+    },
+    "2023 Brazil (S\u00e3o Paulo)": {
+      "session_key": 9205,
+      "safety_car_messages": [
+        "ALL CARS MAY OVERTAKE THE SAFETY CAR",
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR THROUGH THE PIT LANE"
+      ],
+      "periods_found": [
+        [
+          "2023-11-05 17:03:50+00:00",
+          "2023-11-05 17:06:35+00:00",
+          "4"
+        ]
+      ]
+    },
+    "2023 United States (Las Vegas)": {
+      "session_key": 9189,
+      "safety_car_messages": [
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP",
+        "VIRTUAL SAFETY CAR DEPLOYED",
+        "VIRTUAL SAFETY CAR ENDING"
+      ],
+      "periods_found": [
+        [
+          "2023-11-19 06:05:49+00:00",
+          "2023-11-19 06:07:46+00:00",
+          "6"
+        ],
+        [
+          "2023-11-19 06:09:27+00:00",
+          "2023-11-19 06:17:58+00:00",
+          "4"
+        ],
+        [
+          "2023-11-19 06:51:24+00:00",
+          "2023-11-19 06:57:47+00:00",
+          "4"
+        ]
+      ]
+    },
+    "2023 United Arab Emirates (Yas Island)": {
+      "session_key": 9197,
+      "safety_car_messages": [],
+      "periods_found": []
+    }
+  }
+}

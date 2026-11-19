@@ -1,0 +1,568 @@
+======================================================================
+GET /api/best?laps=65
+status: 200
+{
+ "driver": "balanced",
+ "race_laps": 65,
+ "stops": 2,
+ "strategy": [
+  [
+   "HARD",
+   23
+  ],
+  [
+   "HARD",
+   22
+  ],
+  [
+   "MEDIUM",
+   20
+  ]
+ ],
+ "total": 6191.54
+}
+======================================================================
+GET /api/best?laps=65&driver=smooth
+status: 200
+{
+ "driver": "smooth",
+ "race_laps": 65,
+ "stops": 2,
+ "strategy": [
+  [
+   "HARD",
+   23
+  ],
+  [
+   "HARD",
+   22
+  ],
+  [
+   "MEDIUM",
+   20
+  ]
+ ],
+ "total": 6192.13
+}
+======================================================================
+GET /api/best?laps=8
+status: 400
+{
+ "error": "Race too short: the optimizer needs at least 10 laps."
+}
+======================================================================
+GET /api/best?driver=nobody
+status: 400
+{
+ "error": "Unknown driver 'nobody'. Use one of: balanced, smooth, aggressive, VER, NOR, LEC, PIA, SAI, PER, HAM, RUS, ALO, HUL, COL, STR, GAS, MAG, ALB, TSU, RIC, LAW, OCO, BOT, ZHO, SAR."
+}
+======================================================================
+GET /api/evaluate MEDIUM:31,HARD:34
+status: 200
+{
+ "best_strategy": [
+  [
+   "HARD",
+   23
+  ],
+  [
+   "HARD",
+   22
+  ],
+  [
+   "MEDIUM",
+   20
+  ]
+ ],
+ "best_total": 6191.54,
+ "driver": "balanced",
+ "time_lost": 25.04,
+ "valid": true,
+ "your_strategy": [
+  [
+   "MEDIUM",
+   31
+  ],
+  [
+   "HARD",
+   34
+  ]
+ ],
+ "your_total": 6216.58
+}
+======================================================================
+GET /api/evaluate HARD:65 (breaks two-compound rule)
+status: 200
+{
+ "reason": "A dry race needs at least two different compounds.",
+ "valid": false
+}
+======================================================================
+GET /api/evaluate bad text
+status: 400
+{
+ "error": "Could not read the strategy. Use e.g. strategy=MEDIUM:31,HARD:34"
+}
+======================================================================
+GET /api/evaluate unknown compound
+status: 400
+{
+ "error": "Unknown compound 'PURPLE'. Use SOFT, MEDIUM or HARD."
+}
+======================================================================
+GET /api/laps best strategy: status 200 records 65
+{
+ "base": 92.0,
+ "compound": "MEDIUM",
+ "compound_pace": 0.0,
+ "driver_pace": 0.0,
+ "fuel": 3.5,
+ "lap": 1,
+ "lap_time": 95.52,
+ "pit_lap": false,
+ "pit_stop": 0.0,
+ "tyre_age": 0,
+ "wear": 0.02
+}
+{
+ "base": 92.0,
+ "compound": "SOFT",
+ "compound_pace": -0.3,
+ "driver_pace": 0.0,
+ "fuel": 2.423,
+ "lap": 21,
+ "lap_time": 116.834,
+ "pit_lap": true,
+ "pit_stop": 22.7,
+ "tyre_age": 0,
+ "wear": 0.011
+}
+======================================================================
+POST /api/advise (SC:4)
+status: 200
+{
+ "calibration": {
+  "error_per_lap": 0.39375936970718506,
+  "laps_used": 3,
+  "multiplier": 0.7,
+  "note": null,
+  "prior": 1.15,
+  "rms_after": 0.394,
+  "rms_before": 1.139,
+  "source": "lap times",
+  "warning": "The lap times are further from the model than any tyre-wear setting can explain (traffic, a mistake, or a different pace?). Treat the answer with care."
+ },
+ "headline": {
+  "advice": "pit lap 24 on HARD, then lap 45 on HARD",
+  "decision": "PIT",
+  "diff": 10.59,
+  "margin": 2.641,
+  "why": "pitting during the 4 slow laps beats waiting by more than the margin"
+ },
+ "laps_remaining": 45,
+ "questions": [],
+ "track": {
+  "best_later": {
+   "how": "pit lap 28 on HARD, then lap 47 on HARD",
+   "search_cost": 73.42878002375151,
+   "stops": [
+    [
+     7,
+     "HARD"
+    ],
+    [
+     26,
+     "HARD"
+    ]
+   ],
+   "total": 4465.87
+  },
+  "best_now": {
+   "how": "pit lap 24 on HARD, then lap 45 on HARD",
+   "search_cost": 62.838908070921924,
+   "stops": [
+    [
+     3,
+     "HARD"
+    ],
+    [
+     24,
+     "HARD"
+    ]
+   ],
+   "total": 4455.28
+  },
+  "decision": "PIT",
+  "diff": 10.59,
+  "margin": 2.641,
+  "slow_laps": 4,
+  "track_states": [
+   "SC",
+   "SC",
+   "SC",
+   "SC",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN"
+  ],
+  "wear_mult": 0.7,
+  "why": "pitting during the 4 slow laps beats waiting by more than the margin"
+ }
+}
+======================================================================
+POST /api/advise green flag no laps
+status: 200
+{
+ "calibration": {
+  "error_per_lap": 0.3,
+  "laps_used": 0,
+  "multiplier": 1.0,
+  "note": null,
+  "prior": 1.0,
+  "rms_after": null,
+  "rms_before": null,
+  "source": "model only",
+  "warning": null
+ },
+ "headline": {
+  "advice": "box now (best lap 21, window laps 21-24)",
+  "decision": "PIT",
+  "diff": 0.11,
+  "margin": 2.012,
+  "why": "inside the stop window (laps 21-24) and the best lap is now or the window is closing"
+ },
+ "laps_remaining": 45,
+ "questions": [],
+ "track": {
+  "advice": "box now (best lap 21, window laps 21-24)",
+  "best_later": {
+   "how": "pit lap 22 on HARD, then lap 44 on HARD",
+   "search_cost": 80.79211557369437,
+   "stops": [
+    [
+     1,
+     "HARD"
+    ],
+    [
+     23,
+     "HARD"
+    ]
+   ],
+   "total": 4276.52
+  },
+  "best_now": {
+   "how": "pit now on HARD, then lap 43 on HARD",
+   "search_cost": 80.67734992289834,
+   "stops": [
+    [
+     0,
+     "HARD"
+    ],
+    [
+     22,
+     "HARD"
+    ]
+   ],
+   "total": 4276.41
+  },
+  "decision": "PIT",
+  "diff": 0.11,
+  "margin": 2.012,
+  "slow_laps": 0,
+  "stop_window": {
+   "best_cost": 80.67734992289834,
+   "best_lap": 21,
+   "costs": {
+    "21": 80.68,
+    "22": 80.79,
+    "23": 81.21,
+    "24": 81.82,
+    "25": 82.77,
+    "26": 83.93,
+    "27": 85.45,
+    "28": 87.23,
+    "29": 89.38,
+    "30": 91.81,
+    "31": 94.63,
+    "32": 97.74,
+    "33": 101.27,
+    "34": 105.19,
+    "35": 109.65,
+    "36": 113.08,
+    "37": 116.74,
+    "38": 121.22,
+    "39": 126.56,
+    "40": 132.82,
+    "41": 140.02,
+    "42": 148.23,
+    "43": 157.47,
+    "44": 167.81,
+    "45": 179.28
+   },
+   "earliest": 21,
+   "latest": 24,
+   "margin": 2.01
+  },
+  "track_states": [
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN"
+  ],
+  "wear_mult": 1.0,
+  "why": "inside the stop window (laps 21-24) and the best lap is now or the window is closing"
+ }
+}
+======================================================================
+POST /api/advise missing key
+status: 400
+{
+ "error": "Unknown compound. Use SOFT, MEDIUM or HARD."
+}
+======================================================================
+POST /api/advise not JSON
+status: 400
+{
+ "error": "Send the race state as a JSON body."
+}
+======================================================================
+POST /api/duel
+status: 200
+{
+ "calibration": {
+  "error_per_lap": 0.3,
+  "laps_used": 0,
+  "multiplier": 1.0,
+  "note": null,
+  "prior": 1.0,
+  "rms_after": null,
+  "rms_before": null,
+  "source": "model only",
+  "warning": null
+ },
+ "duel": {
+  "bunch_gap": 1.05,
+  "cells": [
+   {
+    "ahead_at_flag": true,
+    "final_gap": 1.05,
+    "me": "pit",
+    "my_how": "pit lap 24 on HARD, then lap 45 on HARD",
+    "my_total": 4455.28,
+    "rival": "pit",
+    "rival_how": "pit lap 24 on HARD, then lap 45 on HARD",
+    "rival_total": 4455.28,
+    "swap_laps": []
+   },
+   {
+    "ahead_at_flag": true,
+    "final_gap": 12.14,
+    "me": "pit",
+    "my_how": "pit lap 24 on HARD, then lap 45 on HARD",
+    "my_total": 4455.28,
+    "rival": "wait",
+    "rival_how": "pit lap 25 on HARD, then lap 45 on HARD",
+    "rival_total": 4466.37,
+    "swap_laps": [
+     24,
+     25
+    ]
+   },
+   {
+    "ahead_at_flag": false,
+    "final_gap": -10.04,
+    "me": "wait",
+    "my_how": "pit lap 25 on HARD, then lap 45 on HARD",
+    "my_total": 4466.37,
+    "rival": "pit",
+    "rival_how": "pit lap 24 on HARD, then lap 45 on HARD",
+    "rival_total": 4455.28,
+    "swap_laps": [
+     25
+    ]
+   },
+   {
+    "ahead_at_flag": true,
+    "final_gap": 1.05,
+    "me": "wait",
+    "my_how": "pit lap 25 on HARD, then lap 45 on HARD",
+    "my_total": 4466.37,
+    "rival": "wait",
+    "rival_how": "pit lap 25 on HARD, then lap 45 on HARD",
+    "rival_total": 4466.37,
+    "swap_laps": []
+   }
+  ],
+  "decision": "PIT",
+  "diff": 11.09,
+  "gap": 3.0,
+  "margin": 2.012,
+  "my_options": {
+   "pit": {
+    "how": "pit lap 24 on HARD, then lap 45 on HARD",
+    "total": 4455.28
+   },
+   "wait": {
+    "how": "pit lap 25 on HARD, then lap 45 on HARD",
+    "total": 4466.37
+   }
+  },
+  "rival_options": {
+   "pit": {
+    "how": "pit lap 24 on HARD, then lap 45 on HARD",
+    "total": 4455.28
+   },
+   "wait": {
+    "how": "pit lap 25 on HARD, then lap 45 on HARD",
+    "total": 4466.37
+   }
+  },
+  "safe_if_pit": true,
+  "safe_if_wait": false,
+  "slow_laps": 4,
+  "track_states": [
+   "SC",
+   "SC",
+   "SC",
+   "SC",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN",
+   "GREEN"
+  ],
+  "why": "Pitting has the better worst case. Pitting during the 4 slow laps keeps you ahead whatever he does; waiting can lose the place.",
+  "worst_case": {
+   "pit": 1.05,
+   "wait": -10.04
+  }
+ },
+ "headline": {
+  "advice": "pit lap 24 on HARD, then lap 45 on HARD",
+  "decision": "PIT",
+  "diff": 11.09,
+  "margin": 2.012,
+  "why": "Pitting has the better worst case. Pitting during the 4 slow laps keeps you ahead whatever he does; waiting can lose the place."
+ },
+ "laps_remaining": 45,
+ "questions": []
+}
+======================================================================
+GET / status 200 bytes 31892 starts: <!doctype html> <html lang="en"> <head>   <meta charset="utf
+parse_strategy: [('MEDIUM', 31), ('HARD', 34)]
+parse_track_plan: [('VSC', 2), ('SC', 3)] []

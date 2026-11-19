@@ -1,0 +1,51 @@
+CHECK 1: green-flag totals vs your functions (3 laps left)
+   stay : 296.179293 vs 296.179293
+   SOFT  : 298.462824 vs 298.462824
+   MEDIUM: 299.282168 vs 299.282168
+   HARD  : 299.277957 vs 299.277957
+
+CHECK 2 (inside the slow laps): total - search cost = 4392.441538
+
+CHECK 2 (after them): total - search cost = 4392.441538
+
+CHECK 3: no safety car
+   track (first 12 laps): gggggggggggg
+   best now  : pit now on HARD, then lap 43 on HARD -> 4276.41
+   best later: pit lap 22 on HARD, then lap 44 on HARD -> 4276.52
+   decision  : PIT | diff 0.11 | margin 2.012
+   why       : inside the stop window (laps 21-24) and the best lap is now or the window is closing
+
+CHECK 4: safety car for 4 laps, announced now
+   track (first 12 laps): SSSSgggggggg
+   best now  : pit lap 24 on HARD, then lap 45 on HARD -> 4455.28
+   best later: pit lap 25 on HARD, then lap 45 on HARD -> 4466.37
+   decision  : PIT | diff 11.09 | margin 2.012
+   why       : pitting during the 4 slow laps beats waiting by more than the margin
+
+CHECK 5: virtual safety car for 2 laps
+   track (first 12 laps): VVgggggggggg
+   best now  : pit lap 22 on HARD, then lap 44 on HARD -> 4316.61
+   best later: pit lap 23 on HARD, then lap 44 on HARD -> 4323.32
+   decision  : PIT | diff 6.71 | margin 2.012
+   why       : pitting during the 2 slow laps beats waiting by more than the margin
+
+CHECK 6: HARD set fitted 3 laps ago, safety car for 4 laps
+   track (first 12 laps): SSSSgggggggg
+   best now  : pit lap 27 on HARD, then lap 47 on HARD -> 4168.3
+   best later: pit lap 45 on HARD -> 4163.15
+   decision  : STAY | diff -5.15 | margin 1.944
+   why       : waiting beats pitting during the 4 slow laps by more than the margin
+
+CHECK 7: lap 55, healthy HARD set, safety car for 4 laps
+   track (first 12 laps): SSSSgggggg
+   best now  : pit lap 59 on SOFT -> 1138.3
+   best later: no more stops -> 1139.93
+   decision  : PIT | diff 1.63 | margin 0.949
+   why       : pitting during the 4 slow laps beats waiting by more than the margin
+
+CHECK 8: lap 40, MEDIUM set 26 laps old, safety car for 4 laps
+   track (first 12 laps): SSSSgggggggg
+   best now  : pit lap 44 on HARD -> 2545.22
+   best later: pit lap 45 on HARD -> 2556.27
+   decision  : PIT | diff 11.05 | margin 1.5
+   why       : pitting during the 4 slow laps beats waiting by more than the margin

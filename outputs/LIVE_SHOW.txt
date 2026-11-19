@@ -1,0 +1,93 @@
+CHECK 1: forecasts vs your simulate_a_race / time_if_pit_now (3 laps left)
+   stay : 296.179293 vs 296.179293
+   SOFT  : 298.462824 vs 298.462824
+   MEDIUM: 299.282168 vs 299.282168
+   HARD  : 299.277957 vs 299.277957
+
+CHECK 2: tyre behaving as modelled
+   decision: PIT
+   why: pitting is faster by more than the margin
+   diff: 5.463
+   margin: 0.529
+   stay_total: 673.86
+   pit_totals: {'SOFT': 668.39, 'MEDIUM': 669.77, 'HARD': 669.68}
+   best_pit_compound: SOFT
+   residuals: [0.03, -0.04, 0.02, -0.01]
+   residual_slope: -0.006
+   error_per_lap: 0.2
+   wear_multiplier: 1.0
+   notes: []
+
+CHECK 3: real laps slower than the model says
+   decision: PIT
+   why: pitting is faster by more than the margin
+   diff: 21.772
+   margin: 0.529
+   stay_total: 690.17
+   pit_totals: {'SOFT': 668.39, 'MEDIUM': 669.77, 'HARD': 669.68}
+   best_pit_compound: SOFT
+   residuals: [1.459, 1.504, 1.674, 1.817]
+   residual_slope: 0.124
+   error_per_lap: 0.2
+   wear_multiplier: 1.0
+   notes: []
+
+CHECK 4: driver says 'going off', laps as modelled
+   decision: PIT
+   why: pitting is faster by more than the margin
+   diff: 8.311
+   margin: 0.529
+   stay_total: 676.7
+   pit_totals: {'SOFT': 668.39, 'MEDIUM': 669.77, 'HARD': 669.68}
+   best_pit_compound: SOFT
+   residuals: [-0.78, -0.923, -0.935, -1.034]
+   residual_slope: -0.077
+   error_per_lap: 0.2
+   wear_multiplier: 1.15
+   notes: []
+
+CHECK 4b: 3 laps to go, pit and stay nearly equal
+   decision: STAY
+   why: staying out is faster by more than the margin
+   diff: -2.284
+   margin: 0.52
+   stay_total: 296.18
+   pit_totals: {'SOFT': 298.46, 'MEDIUM': 299.28, 'HARD': 299.28}
+   best_pit_compound: SOFT
+   residuals: []
+   residual_slope: 0.0
+   error_per_lap: 0.3
+   wear_multiplier: 1.0
+   notes: ['fewer than 2 real laps given: the stay-out forecast is the model alone']
+
+CHECK 5: 35 laps remain
+   decision: ASK
+   why: 35 laps remain: pit-now vs stay-out-to-the-flag is only reliable close to the end (max_horizon=8); use the strategy optimiser for the whole race
+   diff: 294.61
+   margin: 1.775
+   stay_total: 3624.83
+   pit_totals: {'SOFT': 3432.62, 'MEDIUM': 3346.82, 'HARD': 3330.22}
+   best_pit_compound: HARD
+   residuals: []
+   residual_slope: 0.0
+   error_per_lap: 0.3
+   wear_multiplier: 1.0
+   notes: ['fewer than 2 real laps given: the stay-out forecast is the model alone']
+
+CHECK 6: one compound used so far
+   decision: PIT
+   why: only one compound used so far: a stop is compulsory
+   diff: None
+   margin: None
+   stay_total: 2659.27
+   pit_totals: {'SOFT': 2389.28, 'HARD': 2362.78}
+   best_pit_compound: HARD
+   residuals: []
+   residual_slope: 0.0
+   error_per_lap: 0.3
+   wear_multiplier: 1.0
+   notes: ['fewer than 2 real laps given: the stay-out forecast is the model alone']
+
+CHECK 7: calibrate() on laps made with a true wear multiplier of 1.25
+   fitted multiplier: 1.25 | source: lap times | rms before/after: 1.62 / 0.032
+   young tyre (age 6): source: model only -> the laps cannot show the wear, so the model is used

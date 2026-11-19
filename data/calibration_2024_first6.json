@@ -1,0 +1,347 @@
+{
+  "races_used": [
+    "2024 Bahrain (Sakhir)",
+    "2024 Australia (Melbourne)",
+    "2024 Spain (Barcelona)",
+    "2024 Hungary (Budapest)",
+    "2024 Italy (Monza)",
+    "2024 Japan (Suzuka)"
+  ],
+  "races_skipped": [
+    "2024 Canada (Montr\u00e9al): wet race (65% of laps on wet tyres)",
+    "2024 United Kingdom (Silverstone): wet race (24% of laps on wet tyres)"
+  ],
+  "compound_pace_offset": {
+    "MEDIUM": 0.0,
+    "SOFT": {
+      "median": -0.112,
+      "per_race": [
+        0.04,
+        -0.374
+      ]
+    },
+    "HARD": {
+      "median": -0.006,
+      "per_race": [
+        0.039,
+        0.254,
+        -0.096,
+        -0.337,
+        0.218
+      ]
+    }
+  },
+  "fuel_seconds_per_lap": {
+    "median": -0.059,
+    "per_race": [
+      -0.071,
+      -0.053,
+      -0.058,
+      -0.045,
+      -0.059,
+      -0.094
+    ]
+  },
+  "fuel_full_tank_penalty": {
+    "median": 3.508,
+    "per_race": [
+      4.039,
+      3.051,
+      3.854,
+      3.162,
+      3.149,
+      4.957
+    ]
+  },
+  "degradation_per_lap": {
+    "SOFT": {
+      "median": 0.127,
+      "per_race": [
+        0.127,
+        0.089,
+        0.167
+      ]
+    },
+    "MEDIUM": {
+      "median": 0.069,
+      "per_race": [
+        0.067,
+        0.089,
+        0.069,
+        0.038,
+        0.134
+      ]
+    },
+    "HARD": {
+      "median": 0.079,
+      "per_race": [
+        0.111,
+        0.049,
+        0.079,
+        0.08,
+        0.047,
+        0.119
+      ]
+    }
+  },
+  "stint_length": {
+    "SOFT": {
+      "median": 12.0,
+      "p25": 8.0,
+      "p75": 15.0,
+      "n": 59
+    },
+    "MEDIUM": {
+      "median": 16.0,
+      "p25": 10.0,
+      "p75": 21.0,
+      "n": 76
+    },
+    "HARD": {
+      "median": 21.0,
+      "p25": 18.0,
+      "p75": 24.75,
+      "n": 74
+    }
+  },
+  "lap_time_ratio": {
+    "SC": null,
+    "VSC": null
+  },
+  "track_laps_found": {
+    "SC": 0,
+    "VSC": 0
+  },
+  "pit_loss": {
+    "GREEN": {
+      "median": 22.846,
+      "p25": 21.252,
+      "p75": 24.558,
+      "n": 216
+    },
+    "SC": null,
+    "VSC": null
+  },
+  "bunch_gap": {
+    "SC": null,
+    "GREEN": {
+      "median": 3.393,
+      "p25": 1.665,
+      "p75": 6.805,
+      "n": 3191
+    }
+  },
+  "drivers": {
+    "VER": {
+      "pace": -1.139,
+      "tyre_care": 1.079,
+      "clean_laps": 271,
+      "races": 5
+    },
+    "NOR": {
+      "pace": -0.893,
+      "tyre_care": 0.968,
+      "clean_laps": 322,
+      "races": 6
+    },
+    "PIA": {
+      "pace": -0.886,
+      "tyre_care": 1.072,
+      "clean_laps": 321,
+      "races": 6
+    },
+    "SAI": {
+      "pace": -0.849,
+      "tyre_care": 1.002,
+      "clean_laps": 325,
+      "races": 6
+    },
+    "LEC": {
+      "pace": -0.759,
+      "tyre_care": 0.844,
+      "clean_laps": 326,
+      "races": 6
+    },
+    "HAM": {
+      "pace": -0.744,
+      "tyre_care": 1.01,
+      "clean_laps": 271,
+      "races": 5
+    },
+    "PER": {
+      "pace": -0.737,
+      "tyre_care": 1.082,
+      "clean_laps": 319,
+      "races": 6
+    },
+    "RUS": {
+      "pace": -0.566,
+      "tyre_care": 1.005,
+      "clean_laps": 321,
+      "races": 6
+    },
+    "ALO": {
+      "pace": -0.018,
+      "tyre_care": 0.891,
+      "clean_laps": 317,
+      "races": 6
+    },
+    "HUL": {
+      "pace": 0.051,
+      "tyre_care": 1.052,
+      "clean_laps": 316,
+      "races": 6
+    },
+    "STR": {
+      "pace": 0.254,
+      "tyre_care": 0.94,
+      "clean_laps": 302,
+      "races": 6
+    },
+    "MAG": {
+      "pace": 0.363,
+      "tyre_care": 1.02,
+      "clean_laps": 317,
+      "races": 6
+    },
+    "RIC": {
+      "pace": 0.39,
+      "tyre_care": 0.889,
+      "clean_laps": 272,
+      "races": 5
+    },
+    "ALB": {
+      "pace": 0.429,
+      "tyre_care": 0.978,
+      "clean_laps": 269,
+      "races": 5
+    },
+    "GAS": {
+      "pace": 0.43,
+      "tyre_care": 1.085,
+      "clean_laps": 282,
+      "races": 6
+    },
+    "ZHO": {
+      "pace": 0.456,
+      "tyre_care": 1.025,
+      "clean_laps": 269,
+      "races": 5
+    },
+    "OCO": {
+      "pace": 0.512,
+      "tyre_care": 1.004,
+      "clean_laps": 311,
+      "races": 6
+    },
+    "TSU": {
+      "pace": 0.519,
+      "tyre_care": 0.775,
+      "clean_laps": 271,
+      "races": 5
+    },
+    "BOT": {
+      "pace": 0.635,
+      "tyre_care": 1.01,
+      "clean_laps": 316,
+      "races": 6
+    },
+    "SAR": {
+      "pace": 0.789,
+      "tyre_care": 1.163,
+      "clean_laps": 207,
+      "races": 4
+    }
+  },
+  "suggested": {
+    "compound_pace_offset": {
+      "SOFT": -0.112,
+      "MEDIUM": 0.0,
+      "HARD": -0.006
+    },
+    "fuel_full_tank_penalty": 3.508,
+    "pit_loss": {
+      "GREEN": 22.846,
+      "SC": null,
+      "VSC": null
+    },
+    "lap_mult": {
+      "SC": null,
+      "VSC": null
+    },
+    "bunch_gap": null
+  },
+  "openf1_notes": {
+    "2024 Bahrain (Sakhir)": {
+      "session_key": 9472,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2024 Australia (Melbourne)": {
+      "session_key": 9488,
+      "safety_car_messages": [
+        "VIRTUAL SAFETY CAR DEPLOYED",
+        "VIRTUAL SAFETY CAR ENDING"
+      ],
+      "periods_found": [
+        [
+          "2024-03-24 04:26:24+00:00",
+          "2024-03-24 04:27:29+00:00",
+          "6"
+        ],
+        [
+          "2024-03-24 05:22:02+00:00",
+          "2024-03-24 05:23:37+00:00",
+          "6"
+        ]
+      ]
+    },
+    "2024 Spain (Barcelona)": {
+      "session_key": 9539,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2024 Hungary (Budapest)": {
+      "session_key": 9566,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2024 Italy (Monza)": {
+      "session_key": 9590,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2024 Japan (Suzuka)": {
+      "session_key": 9496,
+      "safety_car_messages": [
+        "ALL CARS MAY OVERTAKE THE SAFETY CAR"
+      ],
+      "periods_found": []
+    },
+    "2024 Canada (Montr\u00e9al)": {
+      "session_key": 9531,
+      "safety_car_messages": [
+        "LAPPED CAR MAY NOW OVERTAKE THE SAFETY CAR: 24",
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP"
+      ],
+      "periods_found": [
+        [
+          "2024-06-09 18:40:26+00:00",
+          "2024-06-09 18:49:04+00:00",
+          "4"
+        ],
+        [
+          "2024-06-09 19:23:59+00:00",
+          "2024-06-09 19:33:01+00:00",
+          "4"
+        ]
+      ]
+    },
+    "2024 United Kingdom (Silverstone)": {
+      "session_key": 9558,
+      "safety_car_messages": [],
+      "periods_found": []
+    }
+  }
+}

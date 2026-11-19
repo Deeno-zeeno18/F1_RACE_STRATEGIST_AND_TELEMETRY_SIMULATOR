@@ -1,0 +1,18 @@
+residuals: [0.5, 0.7, 1.0]
+corrected: [97.233, 97.683, 98.133] confident: True
+
+--- feel inputs ---
+'going off' reported 0 laps ago -> multiplier 1.1500
+'going off' reported 3 laps ago -> multiplier 1.0750
+'going off' reported 6 laps ago -> multiplier 1.0375
+effective age of a 12-lap-old tyre: 13.8
+rival 'faster' -> -0.3 s per lap
+
+--- forecast error ---
+error with 3 residuals: 0.2
+error with 2 residuals: 0.3
+
+--- decisions (3 laps left) ---
+gap 15 s case : {'decision': 'ASK', 'diff': 0.17, 'margin': 0.346, 'why': 'difference is smaller than the forecast error: ask the driver'}
+clear-cut case: {'decision': 'PIT', 'diff': 8.48, 'margin': 0.346, 'why': 'pitting is faster by more than the margin'}
+not confident : {'decision': 'ASK', 'diff': 8.48, 'margin': 0.346, 'why': 'forecast not confident (too few laps of data, or too far ahead)'}

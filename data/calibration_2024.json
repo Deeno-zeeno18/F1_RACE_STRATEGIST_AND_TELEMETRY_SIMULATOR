@@ -1,0 +1,718 @@
+{
+  "races_used": [
+    "2024 Bahrain (Sakhir)",
+    "2024 Saudi Arabia (Jeddah)",
+    "2024 Australia (Melbourne)",
+    "2024 Japan (Suzuka)",
+    "2024 China (Shanghai)",
+    "2024 United States (Miami)",
+    "2024 Italy (Imola)",
+    "2024 Monaco (Monaco)",
+    "2024 Spain (Barcelona)",
+    "2024 Austria (Spielberg)",
+    "2024 Hungary (Budapest)",
+    "2024 Belgium (Spa-Francorchamps)",
+    "2024 Netherlands (Zandvoort)",
+    "2024 Italy (Monza)",
+    "2024 Azerbaijan (Baku)",
+    "2024 Singapore (Marina Bay)",
+    "2024 United States (Austin)",
+    "2024 Mexico (Mexico City)",
+    "2024 United States (Las Vegas)",
+    "2024 Qatar (Lusail)",
+    "2024 United Arab Emirates (Yas Island)"
+  ],
+  "races_skipped": [
+    "2024 Canada (Montr\u00e9al): wet race (65% of laps on wet tyres)",
+    "2024 United Kingdom (Silverstone): wet race (24% of laps on wet tyres)",
+    "2024 Brazil (S\u00e3o Paulo): wet race (100% of laps on wet tyres)"
+  ],
+  "compound_pace_offset": {
+    "MEDIUM": 0.0,
+    "SOFT": {
+      "median": 0.11,
+      "per_race": [
+        0.499,
+        -0.374,
+        0.337,
+        0.04,
+        -0.204,
+        0.179,
+        0.276
+      ]
+    },
+    "HARD": {
+      "median": 0.124,
+      "per_race": [
+        0.679,
+        0.039,
+        0.218,
+        -0.115,
+        -0.07,
+        0.357,
+        -0.357,
+        0.254,
+        0.221,
+        -0.096,
+        -0.147,
+        -0.322,
+        -0.337,
+        0.054,
+        0.172,
+        0.212,
+        0.572,
+        0.561,
+        -0.062,
+        0.669
+      ]
+    }
+  },
+  "fuel_seconds_per_lap": {
+    "median": -0.059,
+    "per_race": [
+      -0.071,
+      -0.118,
+      -0.053,
+      -0.094,
+      -0.085,
+      -0.057,
+      -0.032,
+      -0.087,
+      -0.058,
+      -0.026,
+      -0.045,
+      -0.094,
+      -0.039,
+      -0.059,
+      -0.083,
+      -0.046,
+      -0.076,
+      -0.045,
+      -0.086,
+      -0.067,
+      -0.056
+    ]
+  },
+  "fuel_full_tank_penalty": {
+    "median": 3.843,
+    "per_race": [
+      4.039,
+      5.905,
+      3.051,
+      4.957,
+      4.746,
+      3.227,
+      2.02,
+      6.787,
+      3.854,
+      1.844,
+      3.162,
+      4.139,
+      2.795,
+      3.149,
+      4.236,
+      2.858,
+      4.276,
+      3.165,
+      4.298,
+      3.843,
+      3.253
+    ]
+  },
+  "degradation_per_lap": {
+    "SOFT": {
+      "median": 0.098,
+      "per_race": [
+        0.127,
+        0.121,
+        0.167,
+        0.089,
+        0.089,
+        0.051,
+        0.033,
+        0.106
+      ]
+    },
+    "MEDIUM": {
+      "median": 0.068,
+      "per_race": [
+        0.041,
+        0.067,
+        0.134,
+        0.163,
+        0.026,
+        0.071,
+        0.025,
+        0.089,
+        0.08,
+        0.069,
+        0.1,
+        0.044,
+        0.038,
+        0.033,
+        0.062,
+        0.036,
+        0.074,
+        0.162,
+        -0.021,
+        0.105
+      ]
+    },
+    "HARD": {
+      "median": 0.057,
+      "per_race": [
+        0.111,
+        0.057,
+        0.049,
+        0.119,
+        0.126,
+        0.037,
+        0.044,
+        0.038,
+        0.079,
+        0.062,
+        0.08,
+        0.07,
+        0.042,
+        0.047,
+        0.047,
+        0.066,
+        0.044,
+        0.029,
+        0.064,
+        -0.004,
+        0.06
+      ]
+    }
+  },
+  "stint_length": {
+    "SOFT": {
+      "median": 12.0,
+      "p25": 8.0,
+      "p75": 15.0,
+      "n": 77
+    },
+    "MEDIUM": {
+      "median": 17.0,
+      "p25": 11.0,
+      "p75": 25.0,
+      "n": 290
+    },
+    "HARD": {
+      "median": 22.0,
+      "p25": 18.0,
+      "p75": 28.0,
+      "n": 177
+    }
+  },
+  "lap_time_ratio": {
+    "SC": {
+      "median": 1.565,
+      "per_race": [
+        1.6,
+        1.393,
+        1.277,
+        1.543,
+        1.587,
+        1.605
+      ]
+    },
+    "VSC": null
+  },
+  "track_laps_found": {
+    "SC": 268,
+    "VSC": 0
+  },
+  "pit_loss": {
+    "GREEN": {
+      "median": 22.726,
+      "p25": 20.993,
+      "p75": 25.151,
+      "n": 541
+    },
+    "SC": {
+      "median": 12.555,
+      "p25": 6.107,
+      "p75": 28.819,
+      "n": 25
+    },
+    "VSC": null
+  },
+  "bunch_gap": {
+    "SC": {
+      "median": 1.019,
+      "p25": 0.493,
+      "p75": 1.928,
+      "n": 162
+    },
+    "GREEN": {
+      "median": 2.939,
+      "p25": 1.428,
+      "p75": 6.141,
+      "n": 11361
+    }
+  },
+  "drivers": {
+    "VER": {
+      "pace": -1.125,
+      "tyre_care": 1.037,
+      "clean_laps": 1061,
+      "races": 20
+    },
+    "NOR": {
+      "pace": -1.032,
+      "tyre_care": 0.924,
+      "clean_laps": 1109,
+      "races": 21
+    },
+    "LEC": {
+      "pace": -0.905,
+      "tyre_care": 0.874,
+      "clean_laps": 1120,
+      "races": 21
+    },
+    "PIA": {
+      "pace": -0.87,
+      "tyre_care": 1.019,
+      "clean_laps": 1118,
+      "races": 21
+    },
+    "SAI": {
+      "pace": -0.789,
+      "tyre_care": 0.807,
+      "clean_laps": 1078,
+      "races": 20
+    },
+    "PER": {
+      "pace": -0.637,
+      "tyre_care": 1.07,
+      "clean_laps": 962,
+      "races": 19
+    },
+    "HAM": {
+      "pace": -0.581,
+      "tyre_care": 0.924,
+      "clean_laps": 1007,
+      "races": 19
+    },
+    "RUS": {
+      "pace": -0.566,
+      "tyre_care": 0.838,
+      "clean_laps": 1115,
+      "races": 21
+    },
+    "ALO": {
+      "pace": -0.01,
+      "tyre_care": 0.975,
+      "clean_laps": 1030,
+      "races": 20
+    },
+    "HUL": {
+      "pace": 0.063,
+      "tyre_care": 1.006,
+      "clean_laps": 1016,
+      "races": 20
+    },
+    "COL": {
+      "pace": 0.194,
+      "tyre_care": 0.911,
+      "clean_laps": 329,
+      "races": 7
+    },
+    "STR": {
+      "pace": 0.224,
+      "tyre_care": 0.994,
+      "clean_laps": 964,
+      "races": 19
+    },
+    "GAS": {
+      "pace": 0.241,
+      "tyre_care": 1.026,
+      "clean_laps": 977,
+      "races": 19
+    },
+    "MAG": {
+      "pace": 0.318,
+      "tyre_care": 0.921,
+      "clean_laps": 955,
+      "races": 19
+    },
+    "ALB": {
+      "pace": 0.333,
+      "tyre_care": 0.918,
+      "clean_laps": 888,
+      "races": 18
+    },
+    "TSU": {
+      "pace": 0.37,
+      "tyre_care": 0.862,
+      "clean_laps": 928,
+      "races": 18
+    },
+    "RIC": {
+      "pace": 0.392,
+      "tyre_care": 0.861,
+      "clean_laps": 778,
+      "races": 15
+    },
+    "LAW": {
+      "pace": 0.427,
+      "tyre_care": 0.968,
+      "clean_laps": 242,
+      "races": 5
+    },
+    "OCO": {
+      "pace": 0.446,
+      "tyre_care": 0.977,
+      "clean_laps": 925,
+      "races": 18
+    },
+    "BOT": {
+      "pace": 0.544,
+      "tyre_care": 1.116,
+      "clean_laps": 1030,
+      "races": 21
+    },
+    "ZHO": {
+      "pace": 0.58,
+      "tyre_care": 1.077,
+      "clean_laps": 974,
+      "races": 19
+    },
+    "SAR": {
+      "pace": 0.589,
+      "tyre_care": 1.147,
+      "clean_laps": 613,
+      "races": 12
+    }
+  },
+  "suggested": {
+    "compound_pace_offset": {
+      "SOFT": 0.11,
+      "MEDIUM": 0.0,
+      "HARD": 0.124
+    },
+    "fuel_full_tank_penalty": 3.843,
+    "pit_loss": {
+      "GREEN": 22.726,
+      "SC": 12.555,
+      "VSC": null
+    },
+    "lap_mult": {
+      "SC": 1.565,
+      "VSC": null
+    },
+    "bunch_gap": 1.019
+  },
+  "openf1_notes": {
+    "2024 Bahrain (Sakhir)": {
+      "session_key": 9472,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2024 Saudi Arabia (Jeddah)": {
+      "session_key": 9480,
+      "safety_car_messages": [
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP"
+      ],
+      "periods_found": [
+        [
+          "2024-03-09 17:14:05+00:00",
+          "2024-03-09 17:21:42+00:00",
+          "4"
+        ]
+      ]
+    },
+    "2024 Australia (Melbourne)": {
+      "session_key": 9488,
+      "safety_car_messages": [
+        "VIRTUAL SAFETY CAR DEPLOYED",
+        "VIRTUAL SAFETY CAR ENDING"
+      ],
+      "periods_found": [
+        [
+          "2024-03-24 04:26:24+00:00",
+          "2024-03-24 04:27:29+00:00",
+          "6"
+        ],
+        [
+          "2024-03-24 05:22:02+00:00",
+          "2024-03-24 05:23:37+00:00",
+          "6"
+        ]
+      ]
+    },
+    "2024 Japan (Suzuka)": {
+      "session_key": 9496,
+      "safety_car_messages": [
+        "ALL CARS MAY OVERTAKE THE SAFETY CAR"
+      ],
+      "periods_found": []
+    },
+    "2024 China (Shanghai)": {
+      "session_key": 9673,
+      "safety_car_messages": [
+        "FIA STEWARDS: 10 SECOND TIME PENALTY FOR CAR 2 (SAR) - SAFETY CAR INFRINGEMENT",
+        "FIA STEWARDS: INCIDENT INVOLVING CARS 2 (SAR) AND 27 (HUL) UNDER INVESTIGATION - SAFETY CAR INFRINGEMENT",
+        "FIA STEWARDS: INCIDENT INVOLVING CARS 27 (HUL) AND 3 (RIC) WILL BE INVESTIGATED AFTER THE RACE - SAFETY CAR INFRINGEMENT",
+        "INCIDENT INVOLVING CARS 2 (SAR) AND 27 (HUL) NOTED - SAFETY CAR INFRINGEMENT",
+        "INCIDENT INVOLVING CARS 27 (HUL) AND 3 (RIC) NOTED - SAFETY CAR INFRINGEMENT",
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP",
+        "VIRTUAL SAFETY CAR DEPLOYED"
+      ],
+      "periods_found": [
+        [
+          "2024-04-21 07:39:16+00:00",
+          "2024-04-21 07:43:21+00:00",
+          "6"
+        ],
+        [
+          "2024-04-21 07:43:21+00:00",
+          "2024-04-21 07:51:06+00:00",
+          "4"
+        ],
+        [
+          "2024-04-21 07:53:02+00:00",
+          "2024-04-21 08:02:29+00:00",
+          "4"
+        ]
+      ]
+    },
+    "2024 United States (Miami)": {
+      "session_key": 9507,
+      "safety_car_messages": [
+        "FIA STEWARDS: INCIDENT INVOLVING CAR 20 (MAG) WILL BE INVESTIGATED AFTER THE RACE - ENTERING PIT LANE UNDER SAFETY CAR CONDITIONS",
+        "INCIDENT INVOLVING CAR 20 (MAG) NOTED - ENTERING PIT LANE UNDER SAFETY CAR CONDITIONS",
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP",
+        "VIRTUAL SAFETY CAR DEPLOYED",
+        "VIRTUAL SAFETY CAR ENDING"
+      ],
+      "periods_found": [
+        [
+          "2024-05-05 20:37:57+00:00",
+          "2024-05-05 20:38:38+00:00",
+          "6"
+        ],
+        [
+          "2024-05-05 20:47:06+00:00",
+          "2024-05-05 20:56:20+00:00",
+          "4"
+        ]
+      ]
+    },
+    "2024 Italy (Imola)": {
+      "session_key": 9515,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2024 Monaco (Monaco)": {
+      "session_key": 9523,
+      "safety_car_messages": [
+        "ALL CARS MAY OVERTAKE THE SAFETY CAR"
+      ],
+      "periods_found": []
+    },
+    "2024 Canada (Montr\u00e9al)": {
+      "session_key": 9531,
+      "safety_car_messages": [
+        "LAPPED CAR MAY NOW OVERTAKE THE SAFETY CAR: 24",
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP"
+      ],
+      "periods_found": [
+        [
+          "2024-06-09 18:40:26+00:00",
+          "2024-06-09 18:49:04+00:00",
+          "4"
+        ],
+        [
+          "2024-06-09 19:23:59+00:00",
+          "2024-06-09 19:33:01+00:00",
+          "4"
+        ]
+      ]
+    },
+    "2024 Spain (Barcelona)": {
+      "session_key": 9539,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2024 Austria (Spielberg)": {
+      "session_key": 9550,
+      "safety_car_messages": [
+        "VIRTUAL SAFETY CAR DEPLOYED",
+        "VIRTUAL SAFETY CAR ENDING"
+      ],
+      "periods_found": [
+        [
+          "2024-06-30 14:20:23+00:00",
+          "2024-06-30 14:21:09+00:00",
+          "6"
+        ]
+      ]
+    },
+    "2024 United Kingdom (Silverstone)": {
+      "session_key": 9558,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2024 Hungary (Budapest)": {
+      "session_key": 9566,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2024 Belgium (Spa-Francorchamps)": {
+      "session_key": 9574,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2024 Netherlands (Zandvoort)": {
+      "session_key": 9582,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2024 Italy (Monza)": {
+      "session_key": 9590,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2024 Azerbaijan (Baku)": {
+      "session_key": 9598,
+      "safety_car_messages": [
+        "FIA STEWARDS: INCIDENT INVOLVING CAR 1 (VER) WILL BE INVESTIGATED AFTER THE RACE - VIRTUAL SAFETY CAR INFRINGEMENT",
+        "FIA STEWARDS: INCIDENT INVOLVING CAR 10 (GAS) WILL BE INVESTIGATED AFTER THE RACE - VIRTUAL SAFETY CAR INFRINGEMENT",
+        "FIA STEWARDS: INCIDENT INVOLVING CAR 27 (HUL) WILL BE INVESTIGATED AFTER THE RACE - VIRTUAL SAFETY CAR INFRINGEMENT",
+        "FIA STEWARDS: INCIDENT INVOLVING CAR 31 (OCO) WILL BE INVESTIGATED AFTER THE RACE - VIRTUAL SAFETY CAR INFRINGEMENT",
+        "INCIDENT INVOLVING CAR 1 (VER) NOTED - VIRTUAL SAFETY CAR INFRINGEMENT",
+        "INCIDENT INVOLVING CAR 10 (GAS) NOTED - VIRTUAL SAFETY CAR INFRINGEMENT",
+        "INCIDENT INVOLVING CAR 27 (HUL) NOTED - VIRTUAL SAFETY CAR INFRINGEMENT",
+        "INCIDENT INVOLVING CAR 31 (OCO) NOTED - VIRTUAL SAFETY CAR INFRINGEMENT",
+        "VIRTUAL SAFETY CAR DEPLOYED"
+      ],
+      "periods_found": [
+        [
+          "2024-09-15 12:34:38+00:00",
+          "2024-09-15 12:37:07+00:00",
+          "6"
+        ]
+      ]
+    },
+    "2024 Singapore (Marina Bay)": {
+      "session_key": 9606,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2024 United States (Austin)": {
+      "session_key": 9617,
+      "safety_car_messages": [
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP"
+      ],
+      "periods_found": [
+        [
+          "2024-10-20 19:08:06+00:00",
+          "2024-10-20 19:14:37+00:00",
+          "4"
+        ]
+      ]
+    },
+    "2024 Mexico (Mexico City)": {
+      "session_key": 9625,
+      "safety_car_messages": [
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP"
+      ],
+      "periods_found": [
+        [
+          "2024-10-27 20:04:31+00:00",
+          "2024-10-27 20:16:17+00:00",
+          "4"
+        ]
+      ]
+    },
+    "2024 Brazil (S\u00e3o Paulo)": {
+      "session_key": 9636,
+      "safety_car_messages": [
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP",
+        "VIRTUAL SAFETY CAR DEPLOYED",
+        "VIRTUAL SAFETY CAR ENDING"
+      ],
+      "periods_found": [
+        [
+          "2024-11-03 16:28:21+00:00",
+          "2024-11-03 16:29:50+00:00",
+          "6"
+        ],
+        [
+          "2024-11-03 16:32:53+00:00",
+          "2024-11-03 16:37:22+00:00",
+          "4"
+        ],
+        [
+          "2024-11-03 17:13:14+00:00",
+          "2024-11-03 17:19:34+00:00",
+          "4"
+        ]
+      ]
+    },
+    "2024 United States (Las Vegas)": {
+      "session_key": 9644,
+      "safety_car_messages": [],
+      "periods_found": []
+    },
+    "2024 Qatar (Lusail)": {
+      "session_key": 9655,
+      "safety_car_messages": [
+        "FIA STEWARDS: 5 SECOND TIME PENALTY FOR CAR 63 (RUS) - SAFETY CAR INFRINGEMENT",
+        "FIA STEWARDS: INCIDENT INVOLVING CAR 63 (RUS) UNDER INVESTIGATION - SAFETY CAR INFRINGEMENT",
+        "INCIDENT INVOLVING CAR 63 (RUS) NOTED - SAFETY CAR INFRINGEMENT",
+        "LAPPED CARS MAY NOW OVERTAKE THE SAFETY CAR: 44, 77",
+        "SAFETY CAR DEPLOYED",
+        "SAFETY CAR IN THIS LAP",
+        "SAFETY CAR THROUGH THE PIT LANE",
+        "SAFETY CAR WILL USE START/FINISH STRAIGHT",
+        "VIRTUAL SAFETY CAR DEPLOYED"
+      ],
+      "periods_found": [
+        [
+          "2024-12-01 16:04:33+00:00",
+          "2024-12-01 16:12:26+00:00",
+          "4"
+        ],
+        [
+          "2024-12-01 16:56:32+00:00",
+          "2024-12-01 17:06:52+00:00",
+          "4"
+        ],
+        [
+          "2024-12-01 17:08:24+00:00",
+          "2024-12-01 17:08:44+00:00",
+          "6"
+        ],
+        [
+          "2024-12-01 17:08:44+00:00",
+          "2024-12-01 17:13:40+00:00",
+          "4"
+        ]
+      ]
+    },
+    "2024 United Arab Emirates (Yas Island)": {
+      "session_key": 9662,
+      "safety_car_messages": [
+        "VIRTUAL SAFETY CAR DEPLOYED",
+        "VIRTUAL SAFETY CAR ENDING"
+      ],
+      "periods_found": [
+        [
+          "2024-12-08 13:05:54+00:00",
+          "2024-12-08 13:07:40+00:00",
+          "6"
+        ]
+      ]
+    }
+  }
+}

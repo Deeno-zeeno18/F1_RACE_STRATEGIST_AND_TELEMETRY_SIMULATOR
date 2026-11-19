@@ -1,0 +1,44 @@
+=== 2024 Bahrain (Sakhir): 57 laps, real laps run +2.6 s from the model's base time (removed before asking) ===
+
+=== 2024 Spain (Barcelona): 66 laps, real laps run -14.1 s from the model's base time (removed before asking) ===
+
+=== 2024 Hungary (Budapest): 70 laps, real laps run -10.4 s from the model's base time (removed before asking) ===
+
+=== 2024 Japan (Suzuka): 53 laps, real laps run +3.2 s from the model's base time (removed before asking) ===
+
+=== 2024 China (Shanghai): 56 laps, real laps run +7.0 s from the model's base time (removed before asking) ===
+
+=== 2024 United States (Miami): 57 laps, real laps run -1.8 s from the model's base time (removed before asking) ===
+
+======================================================================
+ALL RACES TOGETHER
+   (baseline = the usual stint length for that compound in the OTHER races, so it has no hindsight; with one race it uses that race)
+
+TEST 1 - when will he stop?   (183 stints asked, 97 where both model and driver stopped again)
+   model      mean error   4.5 laps   median signed  +0.0   within 3 laps  52%
+   baseline   mean error   6.4 laps   median signed  +0.0   within 3 laps  33%   (usual stint length per compound, same stints: model 4.5)
+      on HARD   n= 53  model minus real (median)  +1.0 laps
+      on MEDIUM n= 35  model minus real (median)  -2.0 laps
+      on SOFT   n=  9  model minus real (median)  +2.0 laps
+   he did not stop again and the model agreed: 64;  model wanted a stop he did not make: 18;  he stopped and the model said no more stops: 4
+   next compound chosen by the model equals the real one in 68% of 97 stops
+
+TEST 2 - pit now or stay?   (287 situations)
+   what he really did              n  model said PIT    STAY     ASK
+   stopped this lap or next       44            39%     57%      5%
+   stopped 2-5 laps later         78            38%     60%      1%
+   no stop within 5 laps         165            30%     64%      6%
+   when the model made a call (not ASK) on the clear cases: right 62% of 197
+   ASK share overall: 5%
+
+   Stop window width needed (n=220): scale x the forecast-error margin
+     scale   contains the real stop   median width (laps)
+         1                     48%                     7
+         2                     73%                    10
+         3                     84%                    12
+         4                     87%                    14
+         6                     90%                    15
+         8                     93%                    16
+   live-updated next-stop lap (uses the real laps so far): mean error 5.0 laps, within 3 laps 45%, median signed -1.0   (n=213)
+   the engineer's STOP WINDOW contained the real stop lap in 48% of 220 cases (median window 7 laps wide)
+      when the stop was really within 5 laps: mean error 4.0 laps, within 3 laps 56%   (n=117)
