@@ -17,7 +17,7 @@ No model constant and no calculation was changed.
 | CALIBRATION_LOADER.py | **new**: reads the calibration JSON files and prints each constant in the code next to what the files say, with its status (measured / tuned / hand-set). Changes nothing; shows drift at once |
 | data/calibration_6races_2024.json | removed: byte-identical to calibration_2024_first6.json |
 
-## Not changed (your decisions)
+## Not changed
 
 - The hero image `/static/hero.jpg` referenced by templates/index.html does not exist; add an image you have the rights to, or remove the reference.
 - Chart.js and the fonts load from the internet; self-host them for offline demos.
